@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsinfanexos" value="name:inf_anexo_id;datatype:int,name:inf_id_fk;datatype:int,name:id_cont_fk;datatype:int,name:anexo_titulo;datatype:string,name:anexo_file;datatype:string,name:anexo_fecha;datatype:date,name:anexo_hora;datatype:time,name:anexo_usuario;datatype:string" />
+</info>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsalmovconsdiae" value="name:almovconsdia_id_fk;datatype:int,name:sys_document_func;datatype:int,name:almovconsdiae_cantidad;datatype:int,name:sys_doclasedoc_id_fk;datatype:int,name:sys_user;datatype:int,name:sys_fecha;datatype:int,name:sys_time;datatype:int,name:sys_status;datatype:int,name:almovconsdiae_id;datatype:int" />
+	<infoitem key="UD_rsinfoctrl" value="name:almovconsdia_id;datatype:int,name:doclasedoc_id_fk;datatype:int,name:mcdclasedoc;datatype:int,name:mcdnrodoc;datatype:int,name:mcdfechadoc;datatype:datetime,name:mcdalmacen;datatype:string,name:mcdtipoestruc;datatype:string,name:mcdcuenta;datatype:string,name:mcdcodelem;datatype:int,name:mcd_cantmovto;datatype:int,name:mcd_cantasignada;datatype:int,name:mcd_saldant;datatype:int,name:mcd_valunitant;datatype:real,name:mcd_tax;datatype:real,name:mcd_valmovto;datatype:real,name:geusuario;datatype:string,name:gefechaactua;datatype:datetime" />
+</info>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsdep" value="name:dpd_id;datatype:int,name:dpd_dsdpn_b;datatype:string,name:qty;datatype:int" />
+	<infoitem key="UD_rscargo" value="name:cargo_id;datatype:int,name:codcar;datatype:string,name:nomcar;datatype:string" />
+	<infoitem key="UD_rsglobal_users" value="name:usr_dep;datatype:int,name:usr_cargo;datatype:int,name:idusrglobal;datatype:int" />
+</info>

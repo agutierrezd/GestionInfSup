@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RsDeducc" value="name:Codigo;datatype:string,name:Descripcion Transaccion;datatype:string,name:Fecha Ejec.;datatype:string,name:Posicion Pago No Pptal;datatype:string,name:Descrip Posicion Pago No Pptal;datatype:string,name:Num Doc;datatype:string,name:Valor Doc;datatype:string,name:Saldo;datatype:string,name:Base;datatype:string,name:Tarifa;datatype:string,name:Tesoreria;datatype:string,name:PCI Genera Doc;datatype:string,name:Orden Pago;datatype:string,name:Obligacion;datatype:string,name:Tipo;datatype:string,name:Num Doc Ter;datatype:string,name:Beneficiario Orden Pago;datatype:string,name:Tipo Doc Ben Ded;datatype:string,name:Num Doc Ben Ded.;datatype:string,name:Beneficiario Deduccion;datatype:string" />
+</info>

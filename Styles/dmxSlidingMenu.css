@@ -1,0 +1,115 @@
+/* Stylesheet for Sliding Menu */
+
+div.dmxSlidingMenu {
+    overflow : hidden;
+}
+
+div.dmxSlidingMenuHeader {
+    position : relative;
+}
+
+div.dmxSlidingMenuHeader {
+}
+
+div.dmxSlidingMenuBack {
+    /*position : absolute;
+    left : 5px;
+    top : 5px;*/
+    float: left;
+    margin: 5px 0 0 5px;
+}
+
+div.dmxSlidingMenuBack a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    outline: none;
+}
+
+div.dmxSlidingMenuTitle {
+    padding : 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+div.dmxSlidingMenuView {
+    position : relative;
+    overflow: hidden;
+    background : #fff;
+}
+
+div.dmxSlidingMenuView ul {
+    position : absolute;
+    display : block;
+    margin : 0;
+    padding : 0;
+}
+
+div.dmxSlidingMenuView li {
+    display : block;
+    margin : 0;
+    padding : 0;
+    list-style : none;
+}
+
+div.dmxSlidingMenuView li > a {
+    display : block;
+    padding : 5px;
+    clear: both;
+	overflow: hidden;
+    outline: none;
+}
+
+img.dmxSlidingMenuItemImageLeft {
+    float: left;
+    border: none;
+    margin-right: 5px;
+}
+
+img.dmxSlidingMenuItemImageRight {
+    float: right;
+    border: none;
+    margin-left: 5px;
+}
+
+img.dmxSlidingMenuItemImageTop {
+    display: block;
+    border: none;
+    margin-bottom: 5px;
+}
+
+img.dmxSlidingMenuContentImageLeft {
+    float: left;
+    border: none;
+    margin: 0 5px 5px 0;
+}
+
+img.dmxSlidingMenuContentImageRight {
+    float: right;
+    border: none;
+    margin: 0 0 5px 5px;
+}
+
+img.dmxSlidingMenuContentImageTop {
+    display: block;
+    border: none;
+    margin: 0 auto 5px auto;
+}
+
+span.dmxSlidingMenuItemTitle {
+    display: block;
+}
+
+span.dmxSlidingMenuItemDescription {
+    display: block;
+}
+
+div.dmxSlidingMenuView ul ul {
+    display : none;
+}

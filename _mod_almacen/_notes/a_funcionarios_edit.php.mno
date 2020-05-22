@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsdependencia" value="name:Id;datatype:int,name:de_coddep;datatype:string,name:de_nomdep;datatype:string" />
+	<infoitem key="UD_rstipovinc" value="name:vinc_id;datatype:string,name:vinc_name;datatype:string" />
+	<infoitem key="UD_rsgefuncionarios" value="name:func_doc;datatype:int,name:func_nombres;datatype:int,name:func_email;datatype:int,name:func_dep;datatype:int,name:func_tipovinc;datatype:int,name:func_id;datatype:int" />
+</info>

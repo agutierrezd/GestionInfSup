@@ -1,0 +1,121 @@
+table.shadow
+{
+	border-collapse: collapse;
+	padding: 0px;
+}
+
+table.shadow td
+{
+	padding: 0px;
+}
+
+td.shadow-top
+{
+	height: 5px;
+	background: url(shadow-top.png) no-repeat bottom right;
+}
+
+table.shadow-tr td.shadow-top
+{
+	background-position: bottom left;
+}
+
+td.shadow-bottom
+{
+	height: 5px;
+	background: url(shadow-bottom.png) no-repeat top left;
+}
+
+table.shadow-bl td.shadow-bottom
+{
+	background-position: top right;
+} 
+
+td.shadow-right
+{
+	width: 5px;
+	background: url(shadow-right.png) no-repeat top left;
+}
+
+table.shadow-tr td.shadow-right
+{
+	background-position: bottom left;
+}
+
+td.shadow-left
+{
+	width: 5px;
+	background: url(shadow-left.png) no-repeat top right;
+}
+
+table.shadow-tl td.shadow-left
+{
+	background-position: bottom right;
+}
+
+td.shadow-br
+{
+	width: 5px;
+	height: 5px;
+	background: url(br.png) no-repeat bottom right;
+}
+
+td.shadow-bl
+{
+	width: 5px;
+	height: 5px;
+	background: url(bl.png) no-repeat bottom left;
+}
+
+td.shadow-tl
+{
+	width: 5px;
+	height: 5px;
+	background: url(tl.png) no-repeat top left;
+}
+
+td.shadow-tr
+{
+	width: 5px;
+	height: 5px;
+	background: url(tr.png) no-repeat top left;
+}
+
+table.shadow-75 td.shadow-top,
+table.shadow-75 td.shadow-right,
+table.shadow-75 td.shadow-bottom,
+table.shadow-75 td.shadow-left,
+table.shadow-75 td.shadow-tr,
+table.shadow-75 td.shadow-br,
+table.shadow-75 td.shadow-bl,
+table.shadow-75 td.shadow-tl
+{
+	opacity: 0.75;
+	filter: alpha(opacity='75');   
+}
+
+table.shadow-50 td.shadow-top,
+table.shadow-50 td.shadow-right,
+table.shadow-50 td.shadow-bottom,
+table.shadow-50 td.shadow-left,
+table.shadow-50 td.shadow-tr,
+table.shadow-50 td.shadow-br,
+table.shadow-50 td.shadow-bl,
+table.shadow-50 td.shadow-tl
+{
+	opacity: 0.5;
+	filter: alpha(opacity='50');   
+}
+
+table.shadow-25 td.shadow-top,
+table.shadow-25 td.shadow-right,
+table.shadow-25 td.shadow-bottom,
+table.shadow-25 td.shadow-left,
+table.shadow-25 td.shadow-tr,
+table.shadow-25 td.shadow-br,
+table.shadow-25 td.shadow-bl,
+table.shadow-25 td.shadow-tl
+{
+	opacity: 0.25;
+	filter: alpha(opacity='25');   
+}

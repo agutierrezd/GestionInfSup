@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rscontrato" value="name:cont_fecha_inicio;datatype:int,name:cont_fechafinal;datatype:int,name:id_cont;datatype:int" />
+</info>

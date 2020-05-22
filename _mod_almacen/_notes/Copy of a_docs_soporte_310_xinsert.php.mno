@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsalmovconsdiae" value="name:almovconsdia_id_fk;datatype:int,name:sys_document_func;datatype:int,name:almovconsdiae_cantidad;datatype:int,name:sys_doclasedoc_id_fk;datatype:int,name:sys_user;datatype:int,name:sys_fecha;datatype:int,name:sys_time;datatype:int,name:sys_status;datatype:int,name:almovconsdiae_id;datatype:int" />
+</info>

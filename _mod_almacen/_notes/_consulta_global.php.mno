@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rsbusca" value="name:difuncionario;datatype:string,name:func_nombres;datatype:string,name:func_dep;datatype:string,name:de_nomdep;datatype:string,name:func_email;datatype:string,name:func_tipovinc;datatype:int,name:vinc_name;datatype:string,name:aldevindiv_id;datatype:int,name:almovinddia_id;datatype:int,name:dicuenta;datatype:int,name:dicodelem;datatype:int,name:dialmacen;datatype:int,name:di_nroplaca;datatype:string,name:di_nroserie;datatype:string,name:di_fechacompra;datatype:date,name:di_valorultmovto;datatype:real,name:di_nroplacastma;datatype:string,name:sys_user;datatype:string,name:sys_date;datatype:date,name:sys_time;datatype:time,name:sys_sts;datatype:int,name:buscador;datatype:string,name:ed_nomelemento;datatype:string,name:edunidad;datatype:string,name:edmarca;datatype:int,name:ca_nomcuenta;datatype:string,name:ma_nommarca;datatype:string" />
+</info>

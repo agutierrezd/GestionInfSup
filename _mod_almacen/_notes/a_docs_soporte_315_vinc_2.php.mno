@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rsinfogendocumentos" value="name:doclasedoc_id;datatype:int,name:alasiento_id_fk;datatype:int,name:doclasedoc;datatype:int,name:do_nrodoc;datatype:int,name:do_fechadoc;datatype:datetime,name:docodregion;datatype:int,name:do_detalle;datatype:string,name:doccnit;datatype:string,name:do_tipodoc;datatype:string,name:do_file;datatype:string,name:sys_user;datatype:string,name:sys_fecha;datatype:datetime,name:do_legaliza;datatype:int" />
+</info>

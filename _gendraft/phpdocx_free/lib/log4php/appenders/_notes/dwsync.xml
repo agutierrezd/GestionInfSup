@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="LoggerAppenderAdodb.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416700000000" />
+<file name="LoggerAppenderConsole.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416710000000" />
+<file name="LoggerAppenderDailyFile.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416710000000" />
+<file name="LoggerAppenderEcho.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416710000000" />
+<file name="LoggerAppenderFile.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416710000000" />
+<file name="LoggerAppenderMail.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416710000000" />
+<file name="LoggerAppenderMailEvent.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416720000000" />
+<file name="LoggerAppenderNull.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416720000000" />
+<file name="LoggerAppenderPDO.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416720000000" />
+<file name="LoggerAppenderPhp.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416720000000" />
+<file name="LoggerAppenderRollingFile.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416720000000" />
+<file name="LoggerAppenderSocket.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416720000000" />
+<file name="LoggerAppenderSyslog.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416720000000" />
+<file name="LoggerAppenderAdodb.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderConsole.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderDailyFile.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderEcho.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderFile.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderMail.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderMailEvent.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderNull.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderPDO.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderPhp.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderRollingFile.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderSocket.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+<file name="LoggerAppenderSyslog.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844900000000" />
+</dwsync>

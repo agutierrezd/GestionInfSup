@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rscontrato_os" value="name:id_cont_fk;datatype:int,name:os_type_type;datatype:int,name:os_fecha;datatype:int,name:sys_user;datatype:int,name:os_fecha_i;datatype:int,name:os_fecha_f;datatype:int,name:os_id;datatype:int" />
+	<infoitem key="UD_rsinfocont" value="name:id_cont;datatype:int,name:cont_hash;datatype:string,name:cont_nit_contra_ta;datatype:string,name:cont_fecha_inicio;datatype:date" />
+</info>

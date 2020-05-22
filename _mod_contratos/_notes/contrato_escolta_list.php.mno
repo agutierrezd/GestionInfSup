@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:des_cuenta;datatype:string,name:cta_tipotext;datatype:string" />
+	<infoitem key="UD_Recordset2" value="name:nom_banco;datatype:string,name:cod_banco;datatype:int" />
+	<infoitem key="UD_rsescoltas1" value="name:con_nrced_b;datatype:int,name:con_nomcon_b;datatype:string,name:con_movil_b;datatype:string,name:con_vrsdo_b;datatype:real,name:con_tpcta_b;datatype:string,name:con_banco_b;datatype:string,name:con_nrcta_b;datatype:string,name:con_login_b;datatype:string,name:con_idcont_b;datatype:int" />
+</info>

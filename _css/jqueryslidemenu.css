@@ -1,0 +1,326 @@
+body {
+	margin-left: 2px;
+	margin-top: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+}
+.jqueryslidemenu{
+	width: 100%;
+	font-weight: bold;
+	background-color: #3D6300;
+	background-image: url(../img_mcit/bkmenu.png);
+	background-repeat: repeat-x;
+}
+
+.jqueryslidemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+	display: block; /*background of tabs (default state)*/
+	color: white;
+	padding: 8px 10px;
+	border-right: 1px solid #778;
+	color: #2d2b2b;
+	text-decoration: none;
+	background-color: #3d6300;
+	background-image: url(../img_mcit/bkmenu.png);
+	background-repeat: repeat-x;
+}
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited{
+color: white;
+}
+
+.jqueryslidemenu ul li a:hover{
+	color: white;
+	background-color: black;
+	background-image: url(../img_mcit/bkmenuover.png);
+}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+position: absolute;
+left: 0;
+display: block;
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a{
+	font: normal 13px Verdana;
+	width: 250px; /*width of sub menus*/
+	padding: 5px;
+	margin: 0;
+	border-top-width: 0;
+	border-bottom: 1px solid gray;
+}
+
+.jqueryslidemenuz ul li ul li a:hover{ /*sub menus hover style*/
+	color: black;
+	background-color: #eff9ff;
+	background-image: url(../img_mcit/bkmenuover.png);
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}
+.titlemain {
+	background-repeat: no-repeat;
+	background-image: url(../img_mcit/logo_mcit_prosperidad.png);
+}
+.titlemsg {
+	font-family: Tahoma;
+	font-size: 24px;
+	color: #C13C41;
+	padding-left: 300px;
+}
+.titlemsg2 {
+	font-family: Tahoma;
+	font-size: 24px;
+	color: #3366CC;
+}
+.titlemsg3 {
+	font-family: Tahoma;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.titlemsg3Gray {
+	font-family: Tahoma;
+	font-size: 20px;
+	color: #999999;
+}
+.titlemsg3Blue {
+	font-family: Tahoma;
+	font-size: 18px;
+	color: #FFFFFF;
+	background-color: #375F92;
+}
+
+
+.titlenormaltext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+}
+.titlenormaltextbold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+}
+.frmtablauno {
+	border: thin solid #CCCCCC;
+}
+.frmtablahead {
+	font-family: Arial;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	background-color: #3366CC;
+	border: 1px solid #3366CC;
+}
+.frmtablabody {
+	font-family: Arial;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	background-color: #DEF1DC;
+	border: 1px solid #3366CC;
+}
+.frmtablabodyW {
+	font-family: Arial;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #3366CC;
+}
+
+
+.frmceldauno {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-style: normal;
+	background-color: #F7F7F7;
+	border: 1px solid #CCCCCC;
+	font-weight: normal;
+}
+
+.frmceldados {
+	font-family: Tahoma;
+	font-size: 12px;
+	font-style: normal;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	font-weight: bold;
+}
+.frmceldatres {
+	font-family: Tahoma;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #CCCCCC;
+	border: 1px dashed #999999;
+}
+.frmceldacuatro {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	background-color: #CCCCCC;
+	border: 1px solid #999999;
+}
+.strojo {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FF0000;
+	border: 1px dashed #999999;
+}
+.stverde {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #3366CC;
+	border: 1px dashed #999999;
+	height: 45px;
+}
+.stamarillo {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+	background-color: #FFFF00;
+	border: 1px dashed #999999;
+	width: 100%;
+}
+.stblue {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000066;
+	background-color: #DCE6F0;
+	border: 1px dashed #999999;
+}
+.sttitle {
+	font-family: Tahoma;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #375F92;
+	border: 1px dashed #999999;
+	height: 50px;
+}
+.stnormal {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #375F92;
+	background-color: #F7F7F7;
+	border: 1px dashed #999999;
+	height: 25px;
+}
+
+
+.warningok {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #00CC66;
+	height: 10px;
+	border: 1px solid #000000;
+	font-weight: bold;
+}
+
+.warningalert {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #000033;
+	background-color: #FFFFCE;
+	height: 10px;
+	border: 1px solid #000000;
+	font-weight: bold;
+}
+.warningerror {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #FF0000;
+	height: 10px;
+	border: 1px solid #000000;
+	font-weight: bold;
+}
+.titleboton {
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #67b021;
+	border: 1px solid #3366CC;
+	height: 25px;
+	width: 60px;
+}
+.botongenera {
+	font-family: Arial;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #3366CC;
+	border: 1px solid #3366CC;
+	height: 50px;
+	width: 80px;
+	text-decoration: none;
+}

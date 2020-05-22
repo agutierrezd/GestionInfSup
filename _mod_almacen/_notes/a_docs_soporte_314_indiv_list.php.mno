@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rslistind" value="name:midnroplaca;datatype:string,name:midnroserie;datatype:string,name:midfuncionario;datatype:string,name:mid_valunit;datatype:real,name:mid_tax;datatype:int,name:mid_valormovto;datatype:real,name:mid_coddetalleestado;datatype:int,name:almovinddia_id;datatype:int,name:doclasedoc_id_fk;datatype:int,name:almovdevdia_id_fk;datatype:int,name:co_nomconcepto;datatype:string" />
+	<infoitem key="UD_rsinfoalmovdevdia" value="name:almovdevdia_id;datatype:int,name:doclasedoc_id_fk;datatype:int,name:mddcuenta;datatype:string,name:mddcodelem;datatype:int,name:ed_nomelemento;datatype:string,name:edunidad;datatype:string,name:um_nomunimed;datatype:string,name:edmarca;datatype:int,name:ma_nommarca;datatype:string,name:mdd_cantmovto;datatype:int,name:mdd_valunit;datatype:real,name:mdd_tax;datatype:int,name:tax_name;datatype:string,name:mdd_valmovto;datatype:real" />
+</info>

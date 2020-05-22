@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<liste>
+	<pays cod="AT">
+	  <code>AT</code>
+	  <nom langue="en">austria</nom>
+	  <nom langue="fr">autriche</nom>
+	  <masques>
+	  	<masque>U[0-9]{8}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>BE</code>
+	  <nom langue="en">belgium</nom>
+	  <nom langue="fr">belgique</nom>
+	  <masques>
+	  	<masque>0?[0-9]{*}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>CY</code>
+	  <nom langue="en">cyprus</nom>
+	  <nom langue="fr">chypre</nom>
+	  <masques>
+	  	<masque>[0-9]{8}[A-Z]</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>CZ</code>
+	  <nom langue="en">czech republic</nom>
+	  <nom langue="fr">republique tcheque</nom>
+	  <masques>
+	  	<masque>[0-9]{8,10}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>DE</code>
+	  <nom langue="en">germany</nom>
+	  <nom langue="fr">allemagne</nom>
+	  <masques>
+	  	<masque>[0-9]{9}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>CY</code>
+	  <nom langue="en">cyprus</nom>
+	  <nom langue="fr">chypre</nom>
+	  <masques>
+	  	<masque>[0-9]{8}[A-Z]</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>DK</code>
+	  <nom langue="en">denmark</nom>
+	  <nom langue="fr">danemark</nom>
+	  <masques>
+	  	<masque>[0-9]{8}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>EE</code>
+	  <nom langue="en">estonia</nom>
+	  <nom langue="fr">estonie</nom>
+	  <masques>
+	  	<masque>[0-9]{9}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>EL</code>
+	  <nom langue="en">greece</nom>
+	  <nom langue="fr">grece</nom>
+	  <masques>
+	  	<masque>[0-9]{9}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>ES</code>
+	  <nom langue="en">spain</nom>
+	  <nom langue="fr">espagne</nom>
+	  <masques>
+	  	<masque>[0-9A-Z][0-9]{7}[0-9A-Z]</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>FI</code>
+	  <nom langue="en">finland</nom>
+	  <nom langue="fr">Finlande</nom>
+	  <masques>
+	  	<masque>[0-9]{8}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>FR</code>
+	  <nom langue="en">finland</nom>
+	  <nom langue="fr">Finlande</nom>
+	  <masques>
+	  	<masque>[0-9A-Z]{2}[0-9]{9}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>GB</code>
+	  <nom langue="en">united kingdom</nom>
+	  <nom langue="fr">royaume uni</nom>
+	  <masques>
+	  	<masque>([0-9]{9}|[0-9]{12})</masque>
+	  	<masque>(GD|HA)[0-9]{3}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>HU</code>
+	  <nom langue="en">hungary</nom>
+	  <nom langue="fr">hongrie</nom>
+	  <masques>
+	  	<masque>[0-9]{8}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>IE</code>
+	  <nom langue="en">ireland</nom>
+	  <nom langue="fr">irelande</nom>
+	  <masques>
+	  	<masque>[0-9][A-Z0-9\+\*][0-9]{5}[A-Z]</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>IT</code>
+	  <nom langue="en">italy</nom>
+	  <nom langue="fr">italie</nom>
+	  <masques>
+	  	<masque>[0-9]{11}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>LT</code>
+	  <nom langue="en">lithuania</nom>
+	  <nom langue="fr">lituanie</nom>
+	  <masques>
+	  	<masque>([0-9]{9}|[0-9]{12})</masque>
+	  </masques>
+	</pays> 
+	<pays>
+	  <code>LU</code>
+	  <nom langue="en">luxembourg</nom>
+	  <nom langue="fr">luxembourg</nom>
+	  <masques>
+	  	<masque>[0-9]{8}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>LV</code>
+	  <nom langue="en">latvia</nom>
+	  <nom langue="fr">lettonie</nom>
+	  <masques>
+	  	<masque>[0-9]{11}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>MT</code>
+	  <nom langue="en">Malta</nom>
+	  <nom langue="fr">Malte</nom>
+	  <masques>
+	  	<masque>[0-9]{8}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>NL</code>
+	  <nom langue="en">netherlands</nom>
+	  <nom langue="fr">pays bas</nom>
+	  <masques>
+	  	<masque>[0-9]{9}B[0-9]{2}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>PL</code>
+	  <nom langue="en">poland</nom>
+	  <nom langue="fr">pologne</nom>
+	  <masques>
+	  	<masque>[0-9]{10}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>PT</code>
+	  <nom langue="en">portugal</nom>
+	  <nom langue="fr">portugal</nom>
+	  <masques>
+	  	<masque>[0-9]{9}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>SE</code>
+	  <nom langue="en">sweden</nom>
+	  <nom langue="fr">suede</nom>
+	  <masques>
+	  	<masque>[0-9]{12}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>SI</code>
+	  <nom langue="en">slovenia</nom>
+	  <nom langue="fr">slovenie</nom>
+	  <masques>
+	  	<masque>[0-9]{8}</masque>
+	  </masques>
+	</pays>
+	<pays>
+	  <code>SK</code>
+	  <nom langue="en">slovakia</nom>
+	  <nom langue="fr">slovaquie</nom>
+	  <masques>
+	  	<masque>[0-9]{10}</masque>
+	  </masques>
+	</pays>
+</liste>

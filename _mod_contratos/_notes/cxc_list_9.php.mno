@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_RsInfoCert" value="name:cxc_id;datatype:int,name:inf_id_fk;datatype:int,name:inf_hash_fk;datatype:string,name:cxc_tipocontrato;datatype:string,name:cxc_cont;datatype:string,name:cxc_anio;datatype:year,name:cxc_razonsocial;datatype:string,name:cxc_tipodoc;datatype:string,name:cxc_numdoc;datatype:string,name:cxc_periodoi;datatype:date,name:cxc_periodof;datatype:date,name:cxc_valor;datatype:real,name:cxc_fechaelab;datatype:date,name:cxc_planilla;datatype:string,name:cxc_planillafecha;datatype:date,name:cxc_planillavalor;datatype:real,name:sup_name;datatype:string,name:sup_cargo;datatype:string,name:sup_dep;datatype:string,name:sys_user;datatype:string,name:sys_fecha;datatype:timestamp,name:sys_status;datatype:int,name:cxc_fondopenvol;datatype:real,name:cxc_pagoafc;datatype:real,name:sign_file;datatype:string,name:cert_file;datatype:string,name:id_cont_fk;datatype:int,name:sign_hash;datatype:string" />
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css" />
+</info>

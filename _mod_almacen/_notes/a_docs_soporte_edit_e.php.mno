@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rsinfoasiento" value="name:as_id;datatype:int,name:ascodalmacen;datatype:int,name:as_nroasiento;datatype:int,name:as_fechaasiento;datatype:date,name:as_estadoasien;datatype:string,name:as_aplicadepre;datatype:string,name:sys_user;datatype:string,name:sys_date;datatype:datetime" />
+	<infoitem key="UD_rsclase" value="name:clasedoc_id;datatype:int,name:cd_clasedoc;datatype:int,name:cd_nombredoc;datatype:string,name:cd_ultimonro;datatype:int,name:cd_ctrl;datatype:int,name:cd_link;datatype:string,name:cd_link_2;datatype:string" />
+	<infoitem key="UD_rstipodoc" value="name:contractor_type_id;datatype:int,name:contractor_type;datatype:string" />
+	<infoitem key="UD_rstipomov" value="name:typemov_id;datatype:string,name:typemov_code;datatype:string,name:typemov_name;datatype:string" />
+	<infoitem key="UD_rsconceptos" value="name:cod_concepto_id;datatype:int,name:co_codconcepto;datatype:int,name:co_nomconcepto;datatype:string,name:co_otronomconcepto;datatype:string,name:co_tipomovto;datatype:string,name:co_activo;datatype:string,name:co_ctrl;datatype:int" />
+	<infoitem key="UD_rsdependencias" value="name:Id;datatype:int,name:detipoestruc;datatype:string,name:de_coddep;datatype:string,name:de_nomdep;datatype:string,name:de_horainiact;datatype:time,name:de_horainialm;datatype:time,name:de_horafinalm;datatype:time,name:de_horafinact;datatype:time,name:de_ctrl;datatype:int" />
+	<infoitem key="UD_rsconsecutivo" value="name:alasiento_id_fk;datatype:int,name:qtyconsecutivo;datatype:int" />
+	<infoitem key="UD_rsclase1" value="name:clasedoc_id;datatype:int,name:cd_clasedoc;datatype:int,name:cd_nombredoc;datatype:string,name:cd_ultimonro;datatype:int,name:cd_ctrl;datatype:int,name:cd_link;datatype:string,name:cd_link_2;datatype:string" />
+	<infoitem key="UD_rstipodoc1" value="name:contractor_type_id;datatype:int,name:contractor_type;datatype:string" />
+	<infoitem key="UD_rsgedocumentos" value="name:alasiento_id_fk;datatype:int,name:doclasedoc;datatype:int,name:do_nrodoc;datatype:int,name:do_fechadoc;datatype:int,name:docodregion;datatype:int,name:do_detalle;datatype:int,name:do_tipodoc;datatype:int,name:doccnit;datatype:int,name:do_file;datatype:int,name:sys_user;datatype:int,name:sys_fecha;datatype:int,name:doclasedoc_id;datatype:int" />
+	<infoitem key="UD_rsalmovtodia" value="name:mdclasedoc;datatype:int,name:mdnrodoc;datatype:int,name:mdfechadoc;datatype:int,name:mdalmacen;datatype:int,name:mdnroasiento;datatype:int,name:md_tipomovto;datatype:int,name:mdconcepto;datatype:int,name:md_legalizado;datatype:int,name:mdtipoestruc;datatype:int,name:mddependencia;datatype:int,name:geusuario;datatype:int,name:gefechaactua;datatype:int,name:doclasedoc_id_fk;datatype:int,name:almovtodia_id;datatype:int" />
+</info>

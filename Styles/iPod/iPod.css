@@ -1,0 +1,23 @@
+.iPod
+{
+}
+
+.iPod h2
+{
+	padding: 3px 0 5px 8px;
+	color: #777;
+	background-image: url(titleipod.png);
+	background-position: left 0px;
+	background-repeat: repeat-x;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.iPod .closeHandle
+{
+	top: 4px;
+	right: 3px;
+	width: 11px;
+	height: 11px;
+	background-image: url(cancelipod.png);
+}

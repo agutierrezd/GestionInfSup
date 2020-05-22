@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css" />
+	<infoitem key="UD_Recordset2" value="name:contractor_type;datatype:string,name:contractor_type;datatype:string" />
+	<infoitem key="UD_rsdpto" value="name:iddpto;datatype:int,name:CodDpto;datatype:int,name:NomDpto;datatype:string,name:iddptostatus;datatype:int" />
+</info>

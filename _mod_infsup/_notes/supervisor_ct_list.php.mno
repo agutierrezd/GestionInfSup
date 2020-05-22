@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rsq_global_supervisores1" value="name:NCONTRATO;datatype:string,name:cont_ano;datatype:year,name:usr_name;datatype:string,name:usr_lname;datatype:string,name:cont_nit_contra_ta;datatype:string,name:contractor_name;datatype:string,name:cont_fecha_inicio;datatype:date,name:cont_fechafinal;datatype:date,name:periodo_name;datatype:string,name:cont_informessug;datatype:int,name:id_cont_fk;datatype:int" />
+</info>

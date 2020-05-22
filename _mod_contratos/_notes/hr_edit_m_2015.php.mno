@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rshoja_ruta_2015" value="name:hr_valor;datatype:int,name:hr_id;datatype:int" />
+	<infoitem key="UD_RsInfoHR" value="name:hr_id;datatype:int,name:ctrlpagos_id_fk;datatype:int,name:hr_anio;datatype:year,name:hr_valor;datatype:real,name:hr_fechaingreso;datatype:datetime,name:hr_asunto;datatype:string,name:id_cont_fk;datatype:int,name:CONTRATOID;datatype:string,name:VIGENCIA;datatype:year,name:contractor_type;datatype:string,name:hr_nit_contra_ta;datatype:string,name:contractor_doc_id_dv;datatype:int,name:contractor_name;datatype:string,name:contractor_lname;datatype:string,name:FECHAI;datatype:date,name:FECHAF;datatype:date,name:QTYDIAS;datatype:int,name:hr_fecha_salida;datatype:datetime,name:hr_estado_firma;datatype:string,name:sys_user_actual;datatype:string,name:sys_user;datatype:string,name:sys_fecha_reg;datatype:datetime,name:evento_type;datatype:int,name:hr_file;datatype:string,name:evento_fechaoper;datatype:datetime" />
+</info>

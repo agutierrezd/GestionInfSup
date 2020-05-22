@@ -1,0 +1,296 @@
+<!--
+ Advanced HTML Editor 3
+ Version: 3.5.6
+ (c) 2013 DMXzone.com
+ @build 17-12-2013 17:06:47
+-->
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+
+		<!-- Tabs row -->
+    <tr>
+      <td>
+        <div class="dmx-tab-container">
+          <span class="dmx-tab active" pannel="General">@{General}</span>
+          <div class="clear"></div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Content row -->
+    <tr>
+      <td class="dmx-tab-pannels-container">
+        <div class="dmx-tab-pannel General active">
+
+					<table border="0" cellspacing="2" cellpadding="2" id="table_cell_props">
+					  <tr>
+					    <td align="right"><label for="cellWidth">@{Width}:</label></td>
+					    <td><input type="text" size="4" style="width:50px" id="cellWidth" /> px</td>
+					    <td align="right">&nbsp;&nbsp;<label for="cellHAlign">@{Horizontal align}:</label></td>
+					    <td>
+					      <select id="cellHAlign" style="width:80px">
+					        <option value="">Default</option>
+					        <option value="left">Left</option>
+					        <option value="center">Center</option>
+					        <option value="right">Right</option>
+					      </select>
+					    </td>
+					  </tr>
+					  <tr>
+					    <td align="right"><label for="cellHeight">@{Height}:</label></td>
+					    <td><input type="text" size="4" style="width:50px" id="cellHeight" /> px</td>
+					    <td align="right"><label for="cellVAlign">@{Vertical align}:</label></td>
+					    <td><select id="cellVAlign" style="width:80px">
+					      <option value="">Default</option>
+					      <option value="top">Top</option>
+					      <option value="middle">Middle</option>
+					      <option value="bottom">Bottom</option>
+					      <option value="baseline">Baseline</option>
+					    </select></td>
+					  </tr>
+					  <tr>
+					    <td align="right"><label for="cellNoWrap">@{No wrap}:</label></td>
+					    <td><input type="checkbox" id="cellNoWrap" /></td>
+					    <td align="right"><label for="colorText">@{BG color}:</label></td>
+					    <td>
+					    	<div style="position:relative;">
+						    	<div class="color-control">
+							    	<div class="color-preview"></div>
+						    		<input class="color-hex-preview" type="text" id="colorText" style="width:61px" />
+						    	</div>
+						    </div>
+					    </td>
+					  </tr>
+					  <tr>
+					    <td align="right"><label for="cellHeader">@{Header}:</label></td>
+					    <td><input type="checkbox" id="cellHeader" /></td>
+					    <td align="right">&nbsp;</td>
+					    <td>&nbsp;</td>
+					  </tr>
+					</table>
+				</div>
+      </td>
+    </tr>
+
+    <!-- Buttons -->
+    <tr>
+      <td align="right" nowrap="nowrap" style="padding-top:6px;">
+        <input type="button" style="width:80px;height:23px;" value="@{OK}"     class="dmx-editor-OK" />
+        <input type="button" style="width:80px;height:23px;" value="@{Cancel}" class="dmx-editor-CANCEL" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script>
+(function($) {
+
+	function clearStyle(elem, prop, resetVal) {
+		if ("removeProperty" in elem.style ) {
+			elem.style.removeProperty(prop);
+		}
+		else {
+			if (elem.style.cssText) {//console.log(elem.style.cssText, prop +"\\s*\\:[^;]*;?");
+				elem.style.cssText = elem.style.cssText.replace(
+					new RegExp("\\b" + prop +"\\s*\\:[^;]*;?", "gi"),
+					""
+				);
+			}
+			//elem.style[prop] = resetVal;
+		}
+	}
+
+	/**
+	 * The dialog form (jQuery)
+	 */
+	var _form;
+
+	/**
+	 * The node that contains this dialog (jQuery)
+	 */
+	var _wrapper;
+
+	/**
+	 * The $.dmxEditor instance
+	 */
+	var _editor;
+
+	/**
+	 * The selected table element or null
+	 */
+	var _selectedCell;
+
+	/**
+	 * This is called by the "dialog opener" to initialize the dialog
+	 */
+	DMXAjaxDialog.init = function( editor ) {
+		_form         = $("#table_cell_props");
+		_wrapper      = _form.parent();
+		_editor       = editor;
+		_selectedCell = _editor.getParentNode("TD", true); // can be null
+		if (!_selectedCell) {
+			_selectedCell = _editor.getParentNode("TH", true); // can be null
+			if (!_selectedCell) {
+				return;
+			}
+		}
+
+		var colorControl = $( ".color-control", _wrapper );
+		var colorPreview = $( ".color-preview", colorControl );
+		var colorInput   = $("input", colorControl);
+		var transpBG     = colorPreview.css("background");
+
+		colorInput.bind({
+			"change keyup" : function(e) {
+        if ("rgba(0, 0, 0, 0)" == this.value) {// webkit
+          colorPreview.css("background", transpBG);
+					$(_selectedCell).removeAttr("bgcolor");
+          return;
+        }
+				var c = $.dmxEditor.Color.parse( this.value );
+				if ((/^\s*$/).test(this.value) || this.value == "transparent") {
+					colorPreview.css("background", transpBG);
+					$(_selectedCell).removeAttr("bgcolor");
+				}
+				else {
+					var hex = c.getString("hex").toUpperCase();
+					//this.value = hex;
+					clearStyle(_selectedCell, "background");
+					clearStyle(_selectedCell, "background-color");
+					colorPreview.css("background", hex);
+					$(_selectedCell).attr("bgcolor", hex);
+				}
+			},
+			blur : function() {
+				wrapper.hide();
+			}
+		}).val($(_selectedCell).css("background-color"))//.trigger("change");
+
+		//$('input[type="color"]', _wrapper).each(function(i, btn) {
+		var wrapper = $('<div class="dmx-menu" style="margin:0" tabindex="auto"><div class="menu-items-wrapper"></div></div>');
+		$(".menu-items-wrapper", wrapper).append(
+			$('<div class="picker" />').dmxColorPicker({
+				type  : "web",
+				color : $("input", colorControl).val()
+			})
+			.bind({
+				"colorSelect" : function(e, color) {
+					var c = color.getString("hex").toUpperCase();
+					if ( c != colorInput.val() ) {
+						colorInput.val(c).trigger("change");
+					}
+					wrapper.hide();
+				},
+				"mousedown" : function(e) {
+					return false;
+				},
+				"keydown" : function(e) {
+					return !(/^(37|38|39|40|13)$/.test(String(e.keyCode)));
+				}
+			})
+		);
+		wrapper.hide().appendTo(colorControl[0].parentNode);
+
+		colorPreview.bind({
+			"click" : function(e) {
+				wrapper.show();
+				wrapper.stickTo(colorControl.parent(), {}, e);
+				colorInput.trigger("focus");
+			}
+		});
+
+		// width ---------------------------------------------------------------------
+		$("#cellWidth", _wrapper).bind("keyup change", function() {
+			var w = parseInt(this.value, 10);
+			if ( isNaN(w) || w < 1 ) {
+				$(_selectedCell).removeAttr("width");
+			}
+			else {
+				$(_selectedCell).attr("width", w);
+			}
+		}).val($(_selectedCell).attr("width"));
+
+		// height --------------------------------------------------------------------
+		$("#cellHeight", _wrapper).bind("keyup change", function() {
+			var h = parseInt(this.value, 10);
+			if ( isNaN(h) || h < 1 ) {
+				$(_selectedCell).removeAttr("height");
+			}
+			else {
+				$(_selectedCell).attr("height", h);
+			}
+		}).val($(_selectedCell).attr("height"));
+
+		// nowrap --------------------------------------------------------------------
+		$("#cellNoWrap",  _wrapper).bind("click", function() {
+			if ( this.checked ) {
+				$(_selectedCell).attr("nowrap", "nowrap");
+			}
+			else {
+				$(_selectedCell).removeAttr("nowrap");
+			}
+		})[0].checked = _selectedCell.hasAttribute("nowrap");
+
+		// header --------------------------------------------------------------------
+		$("#cellHeader").bind("click", function() {
+			var prt = _selectedCell.parentNode, i = $(prt.childNodes).index(_selectedCell)
+			if ( this.checked ) {
+				if (_selectedCell.nodeName == "TD") {
+					var newNode = $("<th/>");
+					$.each(_selectedCell.attributes, function(i, o) {
+						newNode.attr(o.name, o.value);
+					});
+					newNode.html(_selectedCell.innerHTML);
+					$(_selectedCell).replaceWith(newNode);
+					_editor.setSelectedNode(prt.childNodes[i], true);
+					if ( !$.browser.msie ) {
+						_editor.collapseSelection( true );
+					}
+					_selectedCell = prt.childNodes[i];
+				}
+			}
+			else {
+				if (_selectedCell.nodeName == "TH") {
+					var newNode = $("<td/>");
+					$.each(_selectedCell.attributes, function(i, o) {
+						newNode.attr(o.name, o.value);
+					});
+					newNode.html(_selectedCell.innerHTML);
+					$(_selectedCell).replaceWith(newNode);
+					_editor.setSelectedNode(prt.childNodes[i], true);
+					if ( !$.browser.msie ) {
+						_editor.collapseSelection( true );
+					}
+					_selectedCell = prt.childNodes[i];
+				}
+			}
+		})[0].checked = _selectedCell.nodeName == "TH";
+
+		// horizontal align ----------------------------------------------------------
+		$("#cellHAlign",  _wrapper).bind("change", function() {
+			var cur = $(this).val();
+			if ( cur ) {
+				$(_selectedCell).attr("align", cur);
+			}
+			else {
+				$(_selectedCell).removeAttr("align");
+			}
+		}).val($(_selectedCell).attr("align"));
+
+		// vertical align ------------------------------------------------------------
+		$("#cellVAlign",  _wrapper).bind("change", function() {
+			var cur = $(this).val();
+			if ( cur ) {
+				$(_selectedCell).attr("valign", cur);
+			}
+			else {
+				$(_selectedCell).removeAttr("valign");
+			}
+		}).val($(_selectedCell).attr("valign"));
+
+
+	};
+
+
+
+})(jQuery);
+</script>

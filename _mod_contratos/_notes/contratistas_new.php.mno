@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:contractor_type;datatype:string,name:contractor_type;datatype:string" />
+	<infoitem key="UD_rscontractor_master" value="name:contractor_type;datatype:int,name:contractor_doc_id;datatype:int,name:contractor_doc_id_dv;datatype:int,name:contractor_name;datatype:int,name:sys_update;datatype:int,name:sys_user;datatype:int,name:sys_date;datatype:int,name:sys_time;datatype:int,name:contractor_id;datatype:int" />
+	<infoitem key="UD_Recordset2" value="name:contractor_type;datatype:string,name:contractor_type;datatype:string" />
+</info>

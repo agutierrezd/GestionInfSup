@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rscontrato_minuta" value="name:No;datatype:int,name:fecha;datatype:int,name:nombre;datatype:int,name:nit;datatype:int,name:nit_dv;datatype:int,name:direc;datatype:int,name:email;datatype:int,name:tel;datatype:int,name:banco;datatype:int,name:cuenta;datatype:int,name:tipo;datatype:int,name:objeto;datatype:int,name:valor;datatype:int,name:rubro;datatype:int,name:cdp;datatype:int,name:plazo;datatype:int,name:garantia;datatype:int,name:superv;datatype:int,name:formapago;datatype:int,name:NaturalezaContratista;datatype:int,name:ModalidadContratacion;datatype:int,name:ClaseContrato;datatype:int,name:NombreSupervisor;datatype:int,name:dependencia;datatype:int,name:representantelegal;datatype:int,name:Otrosi_Adicional_1;datatype:int,name:Otrosi2;datatype:int,name:Inicia;datatype:int,name:Termina;datatype:int,name:clausula_ambiental;datatype:int,name:Resol_Sello;datatype:int,name:ctrl;datatype:int,name:Id;datatype:int" />
+	<infoitem key="UD_rabancos" value="name:codigo;datatype:string,name:nom_banco;datatype:string" />
+	<infoitem key="UD_rstipocuenta" value="name:cta_numero;datatype:string,name:des_cuenta;datatype:string" />
+	<infoitem key="UD_rsmodalidad" value="name:cod_mod_proceso;datatype:string,name:des_mod_proceso;datatype:string" />
+	<infoitem key="UD_rstipocontrato" value="name:cont_tipo;datatype:string,name:nom_tipocontrato;datatype:string" />
+</info>

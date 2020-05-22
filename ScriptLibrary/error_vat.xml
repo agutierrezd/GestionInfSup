@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<errors>
+	<error>
+		<code>1</code>
+		<text langue="en">VAT number structure is invalid</text>
+		<text langue="fr">La structure du numero de TVA est invalide</text>
+	</error>
+	<error>
+		<code>2</code>
+		<text langue="en">Unable to connect to the VAT number validation site</text>
+		<text langue="fr">Impossible de se connecter au service de verification des numéros de TVA</text>
+	</error>
+	<error>
+		<code>3</code>
+		<text langue="en">Your VAT number is invalid</text>
+		<text langue="fr">Numero de TVA intracommunautaire non existant</text>
+	</error>
+	<error>
+		<code>999</code>
+		<text langue="en">Internal error !!!</text>
+		<text langue="fr">Erreur interne !!!</text>
+	</error>
+</errors>

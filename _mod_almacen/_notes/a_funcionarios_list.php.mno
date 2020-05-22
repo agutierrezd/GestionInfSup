@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsfunclist" value="name:func_id;datatype:int,name:func_doc;datatype:string,name:func_nombres;datatype:string,name:func_dep;datatype:string,name:de_nomdep;datatype:string,name:func_email;datatype:string,name:BUSCAR;datatype:string,name:func_tipovinc;datatype:int,name:vinc_name;datatype:string" />
+</info>

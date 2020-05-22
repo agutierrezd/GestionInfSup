@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsempresas" value="name:contractor_id;datatype:int,name:contractor_type;datatype:string,name:contractor_doc_id;datatype:string,name:contractor_doc_id_dv;datatype:int,name:contractor_name;datatype:string,name:contractor_lname;datatype:string,name:contractor_nombresfull;datatype:string,name:contractor_email;datatype:string,name:contractor_address;datatype:string,name:contractor_phone;datatype:string,name:contractor_mobile;datatype:string,name:contractor_city;datatype:string,name:sys_update;datatype:int,name:sys_user;datatype:string,name:sys_date;datatype:date,name:sys_time;datatype:time" />
+	<infoitem key="UD_rshoja_ruta" value="name:hr_nit_contra_ta;datatype:int,name:hr_asunto;datatype:int,name:hr_valor;datatype:int,name:hr_fechaingreso;datatype:int,name:hr_id;datatype:int" />
+</info>

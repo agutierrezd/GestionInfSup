@@ -1,0 +1,160 @@
+/* Sliding Menu iPad Stylesheet */
+
+div.dmxSlidingMenu.ipad {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+    -webkit-text-size-adjust: none;
+}
+
+div.ipad div.dmxSlidingMenuHeader {
+	background: url('header.gif') top repeat-x;
+	height: 44px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+div.ipad div.dmxSlidingMenuFooter {
+}
+
+div.ipad div.dmxSlidingMenuBack {
+	background-image: url('br.gif');
+	background-position: top right;
+	background-repeat: no-repeat;
+	max-width: 160px;
+	height: 31px;
+	margin-left: 7px;
+	margin-top: 6px;
+}
+
+div.ipad div.dmxSlidingMenuBack a {
+	background-image: url('bl.gif');
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 31px;
+	line-height: 31px;
+	padding-right: 12px;
+	padding-left: 20px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 #40526a;
+	text-decoration: none;
+}
+
+div.ipad div.dmxSlidingMenuTitle {
+    padding: 0 10px;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff;
+    color: #71777e;
+}
+
+div.ipad div.dmxSlidingMenuView {
+	background-color: #ddd;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+div.ipad div.dmxSlidingMenuView ul {
+	padding: 15px 0;
+}
+
+div.ipad div.dmxSlidingMenuView ul.dmxSlidingMenuContentPage {
+	background-color: #fff;
+}
+
+div.ipad div.dmxSlidingMenuView li {
+	padding: 0 40px;
+	color: #4a576c;
+	font-size: 14px;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
+div.ipad div.dmxSlidingMenuView li.dmxSlidingMenuItemLabel {
+	padding-top: 0px;
+	font-weight: bold;
+}
+
+div.ipad div.dmxSlidingMenuView li a {
+	background-color: #f7f7f7;
+	margin: 0 -20px;
+	padding: 15px 20px;
+	border: 1px solid #bbb;
+	border-top: none;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.ipad div.dmxSlidingMenuView li.dmxSlidingMenuItemOdd > a {
+	background-color: #f1f1f1;
+}
+
+div.ipad img.dmxSlidingMenuItemImageLeft {
+	margin-right: 10px;
+}
+
+div.ipad img.dmxSlidingMenuItemImageRight {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.ipad div.dmxSlidingMenuView li span.dmxSlidingMenuItemTitle {
+	font-weight: bold;
+}
+
+div.ipad div.dmxSlidingMenuView li span.dmxSlidingMenuItemDescription {
+	font-size: 11px;
+	color: #999;
+}
+
+div.ipad div.dmxSlidingMenuView li.dmxSlidingMenuItemLabel {
+	padding: 10px 30px 0 30px;
+}
+
+div.ipad div.dmxSlidingMenuView li.dmxSlidingMenuItemContent {
+	padding: 10px 20px;
+}
+
+div.ipad div.dmxSlidingMenuView li.dmxSlidingMenuItemFirst > a {
+	margin-top: 15px;
+	border-top: 1px solid #bbb;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+	-webkit-border-top-left-radius: 12px;
+	-webkit-border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	-moz-box-shadow: inset 0 1px 1px #d6d6d6;
+	-webkit-box-shadow: inset 0 1px 1px #d6d6d6;
+	box-shadow: inset 0 1px 1px #d6d6d6;
+}
+
+div.ipad div.dmxSlidingMenuView li.dmxSlidingMenuItemLast > a {
+	margin-bottom: 15px;
+	-moz-border-radius-bottomleft: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	-webkit-border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	-moz-box-shadow: 0 1px #f9f9fa;
+	-webkit-box-shadow: 0 1px #f9f9fa;
+	box-shadow: 0 1px #f9f9fa;
+}
+
+div.ipad div.dmxSlidingMenuView a.dmxSlidingMenuItemSub {
+	background-image: url('next.gif');
+	background-position: right center;
+	background-repeat: no-repeat;
+}

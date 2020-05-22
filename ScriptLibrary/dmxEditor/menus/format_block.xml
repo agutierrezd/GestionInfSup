@@ -1,0 +1,68 @@
+<menu>
+  <item style="font-size:25px;font-weight:bold;">
+    <label>Heading 1</label>
+    <data>
+      <value><![CDATA[<h1>]]></value>
+    </data>
+  </item>
+  <item style="font-size:22px;font-weight:bold;">
+    <label>Heading 2</label>
+    <data>
+      <value><![CDATA[<h2>]]></value>
+    </data>
+  </item>
+  <item style="font-size:19px;font-weight:bold;">
+    <label>Heading 3</label>
+    <data>
+      <value><![CDATA[<h3>]]></value>
+    </data>
+  </item>
+  <item style="font-size:16px;font-weight:bold;">
+    <label>Heading 4</label>
+    <data>
+      <value><![CDATA[<h4>]]></value>
+    </data>
+  </item>
+  <item style="font-size:13px;font-weight:bold;">
+    <label>Heading 5</label>
+    <data>
+      <value><![CDATA[<h5>]]></value>
+    </data>
+  </item>
+  <item style="font-size:10px;font-weight:bold;">
+    <label>Heading 6</label>
+    <data>
+      <value><![CDATA[<h6>]]></value>
+    </data>
+  </item>
+  <item style="font-family:monospace;">
+    <label>Preformatted</label>
+    <data>
+      <value><![CDATA[<pre>]]></value>
+    </data>
+  </item>
+  <item>
+    <label>Div</label>
+    <data>
+      <value><![CDATA[<div>]]></value>
+    </data>
+  </item>
+  <item style="font-style:italic;">
+    <label>Address</label>
+    <data>
+      <value><![CDATA[<address>]]></value>
+    </data>
+  </item>
+  <item >
+    <label>Blockquote</label>
+    <data>
+      <value><![CDATA[<blockquote>]]></value>
+    </data>
+  </item>
+  <item style="line-height:3em;">
+    <label>Paragraph</label>
+    <data>
+      <value><![CDATA[<p>]]></value>
+    </data>
+  </item>
+</menu>

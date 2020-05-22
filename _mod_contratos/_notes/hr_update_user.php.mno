@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsciudades" value="name:idmun;datatype:int,name:CodDpto;datatype:int,name:CodCiudad;datatype:string,name:NomMunicipio;datatype:string,name:idstatus;datatype:int" />
+	<infoitem key="UD_rsbancos" value="name:codigo;datatype:string,name:nom_banco;datatype:string" />
+	<infoitem key="UD_rstipocuenta" value="name:cta_numero;datatype:string,name:des_cuenta;datatype:string" />
+	<infoitem key="UD_rscontractor_master" value="name:contractor_name;datatype:int,name:contractor_email;datatype:int,name:contractor_address;datatype:int,name:contractor_phone;datatype:int,name:contractor_mobile;datatype:int,name:contractor_city;datatype:int,name:bank_name;datatype:int,name:bank_cta_type;datatype:int,name:bank_cta_number;datatype:int,name:sys_update;datatype:int,name:sys_user;datatype:int,name:sys_date;datatype:int,name:sys_time;datatype:int,name:contractor_doc_id;datatype:int" />
+	<infoitem key="UD_rsdptos" value="name:iddpto;datatype:int,name:CodDpto;datatype:int,name:NomDpto;datatype:string,name:iddptostatus;datatype:int" />
+</info>

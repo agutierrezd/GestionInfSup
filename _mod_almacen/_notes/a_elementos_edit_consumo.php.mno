@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsloc" value="name:ascodalmacen;datatype:int,name:ascodalmacen_estado;datatype:int,name:ascodalmacen_nombre;datatype:string,name:ascodalmacen_locale;datatype:string" />
+	<infoitem key="UD_rsunidades" value="name:Id;datatype:int,name:um_codunimed;datatype:int,name:um_nomunimed;datatype:string" />
+	<infoitem key="UD_rsalelemconsumo" value="name:ectipoestruc;datatype:int,name:eccuenta;datatype:int,name:ec_codelem;datatype:int,name:ec_nomelemento;datatype:int,name:ecunidad;datatype:int,name:ec_codelemrel;datatype:int,name:ec_localizacion;datatype:int,name:alelemenconsumo_id;datatype:int" />
+	<infoitem key="UD_rsinfocuentas" value="name:cuentasalma_id;datatype:int,name:catipoestruc;datatype:string,name:ca_codcuenta;datatype:int,name:ca_nomcuenta;datatype:string,name:ca_recibemovto;datatype:string,name:ca_tipocuenta;datatype:string,name:geusuario;datatype:string,name:gefechaactua;datatype:datetime" />
+	<infoitem key="UD_rscuentaelementosc" value="name:eccuenta;datatype:string,name:QTYELEMENTC;datatype:int,name:ULTIMOC;datatype:int" />
+</info>

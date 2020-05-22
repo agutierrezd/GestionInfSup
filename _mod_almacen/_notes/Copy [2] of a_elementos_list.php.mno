@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsbuscaelementosd" value="name:alelemdevolutivo_id;datatype:int,name:edcuenta;datatype:string,name:ed_codelem;datatype:int,name:ed_nomelemento;datatype:string,name:edunidad;datatype:string,name:um_nomunimed;datatype:string,name:edmarca;datatype:int,name:ma_nommarca;datatype:string,name:ed_modeloelem;datatype:string,name:edproveedor;datatype:string,name:ed_valunit;datatype:real,name:ed_codelemrel;datatype:int,name:ed_localizacion;datatype:string,name:buscador;datatype:string" />
+</info>

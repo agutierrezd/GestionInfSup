@@ -1,0 +1,54 @@
+﻿.title-1 {
+  font-size: 150%; 
+  color: #036;   
+}
+.title-2 {
+  font-size: 150%; 
+  color: #369;   
+}
+.title-3 {
+  font-size: 150%; 
+  font-style: italic;
+}
+.title-4 {
+  font-size: 150%; 
+  text-transform: uppercase;
+  color: #F36;   
+}
+.important-1 {
+  color: #F00;   
+}
+.important-2 {
+  color: #FFF;
+  background-color: #F00;
+  padding:0.4em 0.8em;
+}
+.link {
+  color: #06F;
+  text-decoration:none;
+}
+.link:hover {
+  text-decoration:underline;
+}
+.note {
+  color: #333;   
+  background-color:#FFC;
+  padding:0.5em 1em;
+  border: 1px solid #999;
+}
+.list-item {
+  display: list-item;
+  list-style-position:inside;
+}
+.small-1 {
+  font-size:9px;
+  font-family: Verdana, sans-serif;
+  color: #333;
+  font-weight: normal;
+}
+.small-2 {
+  font-size:9px;
+  font-family: Verdana, sans-serif;
+  color: #666;
+  font-weight: normal;
+}

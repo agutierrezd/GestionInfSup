@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rscuentas" value="name:cuentasalma_id;datatype:int,name:catipoestruc;datatype:string,name:ca_codcuenta;datatype:int,name:ca_nomcuenta;datatype:string,name:ca_recibemovto;datatype:string,name:ca_tipocuenta;datatype:string,name:geusuario;datatype:string,name:gefechaactua;datatype:datetime" />
+	<infoitem key="UD_rspresenta" value="name:Id;datatype:int,name:um_codunimed;datatype:int,name:um_nomunimed;datatype:string" />
+	<infoitem key="UD_rsmarcas" value="name:almarcas_id;datatype:int,name:ma_codmarca;datatype:int,name:ma_nommarca;datatype:string,name:ma_observaciones;datatype:string" />
+	<infoitem key="UD_rslocale" value="name:ascodalmacen;datatype:int,name:ascodalmacen_estado;datatype:int,name:ascodalmacen_nombre;datatype:string,name:ascodalmacen_locale;datatype:string" />
+	<infoitem key="UD_rsalelemdevolutivo" value="name:edtipoestruc;datatype:int,name:edcuenta;datatype:int,name:ed_codelem;datatype:int,name:ed_nomelemento;datatype:int,name:edunidad;datatype:int,name:edmarca;datatype:int,name:ed_modeloelem;datatype:int,name:edproveedor;datatype:int,name:ed_valunit;datatype:int,name:ed_codelemrel;datatype:int,name:ed_localizacion;datatype:int,name:alelemdevolutivo_id;datatype:int" />
+	<infoitem key="UD_rscuentaelementos" value="name:edcuenta;datatype:string,name:QTYELEMEN;datatype:int,name:ULTIMO;datatype:int" />
+</info>

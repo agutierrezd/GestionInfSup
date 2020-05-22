@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rshistory" value="name:evento_id;datatype:int,name:hr_id_fk;datatype:int,name:evento_type;datatype:int,name:evento_type_name;datatype:string,name:evento_responsable;datatype:string,name:evento_fechaoper;datatype:datetime,name:evento_mail_1;datatype:string,name:evento_mail_2;datatype:string,name:evento_type_group;datatype:string,name:evento_type_desc;datatype:string,name:evento_id_rol_fk;datatype:int" />
+</info>

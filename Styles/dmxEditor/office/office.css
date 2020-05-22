@@ -1,0 +1,124 @@
+.dmx-editor-wrapper.office {
+	background: #bfdbff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #7f9db9;
+}
+
+.dmx-editor-frame-wrapper iframe,
+.dmx-editor-frame-wrapper textarea {
+	border-color: #7f9db9;
+}
+
+.dmx-editor-wrapper.office .dmx-editor-toolbars {
+	background: #bfdbff;
+	border-width: 0;
+	padding: 2px;
+}
+
+.dmx-editor-wrapper.office .dmx-editor-toolbars .dmx-editor-select,
+.dmx-editor-wrapper.office .dmx-editor-toolbars .combo {
+	border-color: #7f9db9;
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15);
+	-moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15);
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.dmx-editor-wrapper.office .dmx-editor-toolbars .combo input {
+	background-color: transparent;
+}
+
+.dmx-editor-wrapper.office.ie .dmx-editor-toolbars .disabled  img {
+	filter: alpha(opacity=30);
+	background-color: transparent;
+}
+
+.dmx-editor-wrapper.office .dmx-editor-toolbar {
+	background-color: #abd4ff;
+	background-image: url('handle.png');
+	background-repeat: no-repeat;
+	background-position: 3px 50%;
+	border: 1px solid #739cd0;
+	border-color: #fff #abd4ff #739cd0 #abd4ff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	marding-left: 3px;
+	padding: 1px 3px 1px 8px;
+}
+
+.dmx-editor-wrapper.office .dmx-editor-toolbar-start {
+	display: none;
+}
+
+.dmx-editor-wrapper.office .dmx-editor-button:hover,
+.dmx-editor-wrapper.office .hoverable:hover,
+.dmx-editor-wrapper.office .hoverable:focus,
+.dmx-editor-wrapper.office .hoverable.active,
+.dmx-menu.office .hoverable:hover,
+.dmx-menu.office .hoverable:focus,
+.dmx-menu.office .hoverable.active {
+	border-color: #7f9db9;
+	text-shadow: none;
+}
+
+.dmx-editor-wrapper.office .dmx-editor-button.dmx-editor-active,
+.dmx-editor-wrapper.office .activateable.active,
+.dmx-editor-wrapper.office .activateable.active:hover,
+.dmx-editor-wrapper.office .button.checkable.checked,
+.dmx-editor-wrapper.office .checkable.checked:hover,
+.dmx-menu.office .activateable.active,
+.dmx-menu.office .activateable.active:hover,
+.dmx-menu.office .button.checkable.checked,
+.dmx-menu.office .checkable.checked:hover {
+	border-color: #7f9db9;
+	text-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.dmx-editor-wrapper.office .hoverable.disabled:hover,
+.dmx-editor-wrapper.office .hoverable.disabled:focus,
+.dmx-editor-wrapper.office .hoverable.disabled.active,
+.dmx-menu.office .hoverable.disabled:hover,
+.dmx-menu.office .hoverable.disabled:focus,
+.dmx-menu.office .hoverable.disabled.active {
+	background: transparent;
+}
+
+.dmx-menu.office,
+.dmx-menu.office .dmx-menu,
+.dmx-editor-wrapper.office .dmx-editor-select-menu,
+.dmx-editor-wrapper.office .dmx-menu {
+	border-color: #7f9db9;
+	background: #bfdbff;
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.dmx-editor-wrapper.office .dmx-editor-toolbar > * {
+	text-shadow: none;
+}
+
+.dmx-menu.office .menu-items-wrapper,
+.dmx-editor-wrapper.office .menu-items-wrapper {
+	border: none;
+	margin: 2px;
+}
+
+.dmx-menu.office .group-label,
+.dmx-editor-wrapper.office .dmx-editor-select-group,
+.dmx-editor-wrapper.office .group-label {
+	background-color: #bfdbff;
+}
+
+.dmx-menu.office .group-label > span,
+.dmx-editor-wrapper.office .dmx-editor-select-group,
+.dmx-editor-wrapper.office .group-label > span {
+	color: #000;
+	text-shadow: none;
+}

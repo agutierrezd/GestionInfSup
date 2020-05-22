@@ -1,0 +1,65 @@
+<!--
+ Advanced HTML Editor 3
+ Version: 3.5.6
+ (c) 2013 DMXzone.com
+ @build 13-12-2013 11:26:22
+-->
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+
+		<!-- Tabs row -->
+
+    <!-- Content row -->
+    <tr>
+      <td class="dmx-tab-pannels-container">
+        <div class="dmx-tab-pannel General active">
+
+					<table cellspacing="2" cellpadding="2" border="0">
+						<tr>
+							<td align="right" nowrap="nowrap">@{Find}:</td>
+							<td nowrap="nowrap">
+								<input type="text" name="textToFind" style="width:100%;min-width:200px;">
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td nowrap="nowrap">
+								<label><input type="Checkbox" name="matchCase"> @{Match case}</label>&nbsp;&nbsp;
+								<span class="dmx-ie-hide">
+									<label><input type="Checkbox" name="searchUpward"> @{Search upward}</label>
+								</span>
+							</td>
+						</tr>
+					</table>
+
+        </div>
+      </td>
+    </tr>
+
+    <!-- Buttons -->
+    <tr>
+      <td align="right" nowrap="nowrap" style="padding-top:6px;">
+        <input name="find" type="button" style="width:80px;height:23px;" value="@{Find}" />
+        <input type="button" style="width:80px;height:23px;" value="@{Cancel}" class="dmx-editor-CANCEL" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script type="text/javascript">
+(function($) {
+
+$.dmxEditor.Dialog.init = function() {
+	var self = this;
+
+	if (document.selection && document.selection.createRange) {
+		this.dialog.find(".dmx-ie-hide").hide();
+	}
+
+	this.dialog.find("input[name='find']").click(function() {
+		self.getData();
+		self.editor.execute("find", self.data);
+	});
+};
+
+})(jQuery);
+</script>

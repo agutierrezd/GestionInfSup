@@ -1,0 +1,103 @@
+/*
+fontfam="Arial"
+fontsize="12"
+fontweight="normal"
+fontstyle="normal"
+color="#ffffff"
+background="#003399"
+borderstyle="solid"
+bordercol="#0099ff"
+width="200"
+*/
+.dmxTooltipHint{
+	position:absolute;
+	top:300px; left:300px;
+	padding-bottom:13px;
+	display:block;
+	z-index:5000;
+}
+		
+.dmxTooltipHint .dmxTooltipHintContent {
+	width:100%; 
+	background:#003399;
+	color:#ffffff;
+	width:200px;
+	font-family:Arial;
+	font-size:12px;
+	font-weight: normal;
+	font-style: normal;
+	border:2px solid #0099ff;
+	box-shadow: 0px 0px 6px #000;
+	-moz-box-shadow: 0px 0px 6px #000;
+	-webkit-box-shadow: 0px 0px 6px #000;
+	padding:4px 10px 4px 10px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	position: relative;
+}
+
+.dmxTooltipHint .dmxTooltipHintContentBottom	 {
+	top: 8px;
+}
+
+.yellowPopup .dmxTooltipHintContent {background:#393939;color:#FFF;}
+			
+.dmxTooltipHint .dmxTooltipHintArrow{
+	position:absolute;
+	left:20px;
+	width:15px; height:15px;
+	z-index:5001;
+}
+.dmxTooltipHint .dmxTooltipHintArrowTop{
+bottom:1px;
+}
+
+.dmxTooltipHint .dmxTooltipHintArrowBottom{
+top: 0px;
+}
+.dmxTooltipHint .dmxTooltipHintArrowTop div{
+	border-left:2px solid #0099ff;
+	border-right:2px solid #0099ff;
+	box-shadow: 0px 2px 3px #444;
+	-moz-box-shadow: 0px 2px 3px #444;
+	-webkit-box-shadow: 0px 2px 3px #444;
+	font-size:0px; height:1px; background:#003399;margin:0 auto;line-height:0px; font-size:0px; display:block;
+}
+
+.dmxTooltipHint .dmxTooltipHintArrowBottom div {
+	border-left:2px solid #0099ff;
+	border-right:2px solid #0099ff;	
+	box-shadow: 0px -2px 3px #444;
+	-moz-box-shadow: 0px -2px 3px #444;
+	-webkit-box-shadow: 0px -2px 3px #444;
+	font-size:0px; height:1px; background:#003399;margin:0 auto;line-height:0px; font-size:0px; display:block;
+ }
+
+.dmxTooltipHint .dmxTooltipHintArrowTop .line10{width:15px;border:none;} 
+.dmxTooltipHint .dmxTooltipHintArrowTop .line9{width:13px;border:none; } 
+.dmxTooltipHint .dmxTooltipHintArrowTop .line8{width:11px;} 
+.dmxTooltipHint .dmxTooltipHintArrowTop .line7{width:9px;} 
+.dmxTooltipHint .dmxTooltipHintArrowTop .line6{width:7px;} 
+.dmxTooltipHint .dmxTooltipHintArrowTop .line5{width:5px;} 
+.dmxTooltipHint .dmxTooltipHintArrowTop .line4{width:3px;} 
+.dmxTooltipHint .dmxTooltipHintArrowTop .line3{width:1px;
+	border-left:2px solid #0099ff;
+	border-right:2px solid #0099ff;
+	border-bottom:0px solid #0099ff;} 
+.dmxTooltipHint .dmxTooltipHintArrowTop .line2{width:3px;border:none;background:#0099ff;}
+.dmxTooltipHint .dmxTooltipHintArrowTop .line1{width:1px;border:none;background:#0099ff;}  
+
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line10{width:15px;border:none; z-index: 5002; position: relative;} 
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line9{width:13px;border:none; z-index: 5003;position: relative;} 
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line8{width:11px; z-index: 5004;position: relative;} 
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line7{width:9px; z-index: 5005;position: relative;} 
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line6{width:7px; z-index: 5006;position: relative;} 
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line5{width:5px; z-index: 5007;position: relative;} 
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line4{width:3px; z-index: 5008;position: relative;} 
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line3{width:1px; z-index: 5009;position: relative;
+	border-left:2px solid #0099ff;
+	border-right:2px solid #0099ff;
+	border-bottom:0px solid #0099ff;} 
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line2{width:3px;border:none;background:#0099ff; z-index: 5010;position: relative;}
+.dmxTooltipHint .dmxTooltipHintArrowBottom .line1{width:1px;border:none;background:#0099ff; z-index: 5011;position: relative;} 

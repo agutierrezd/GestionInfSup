@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rshoja_ruta" value="name:hr_estado_firma;datatype:int,name:hr_estado_numero;datatype:int,name:hr_estado_fecha;datatype:int,name:hr_estado_file;datatype:int,name:hr_estado_user;datatype:int,name:hr_id;datatype:int" />
+	<infoitem key="UD_rshoja_ruta_2015" value="name:hr_estado_firma;datatype:int,name:hr_estado_numero;datatype:int,name:hr_estado_fecha;datatype:int,name:hr_estado_file;datatype:int,name:hr_estado_user;datatype:int,name:hr_id;datatype:int,name:not_status;datatype:int,name:not_date;datatype:int,name:not_time;datatype:int,name:not_mail;datatype:int" />
+</info>

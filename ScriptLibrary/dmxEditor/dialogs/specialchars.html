@@ -1,0 +1,122 @@
+<!--
+ Advanced HTML Editor 3
+ Version: 3.5.6
+ (c) 2012 DMXzone.com
+ @build 07-03-2012 13:29:42
+-->
+<style>
+#specialcharsDialogTable input,
+#specialcharsDialogTable select {
+  height: 20px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+#specialcharsDialogTable .specialchars {
+	padding:1px 0px 0px 1px;
+	border: 1px solid #999;
+}
+#specialcharsDialogTable .specialchar {
+	display:block;
+	float:left;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	border:1px solid #DDD;
+	margin: 0 1px 1px 0;
+	text-align:center;
+	font-size:15px;
+	background:#DDD;
+}
+
+#specialcharsDialogTable .specialchar:hover {
+	background:#FFF;
+	border-color: #666;
+}
+
+#specialcharsDialogTable td {
+}
+
+#specialcharsDialogTable .gliphpreview {
+	height:80px;
+	width:80px;
+	line-height:80px;
+	font-size:46px;
+	background:#FFF;
+	border: 1px solid #999;
+}
+#specialcharsDialogTable .textpreview {
+  width:80px;
+  font-size:13px;
+  background:#FFF;
+  border: 1px solid #999;
+}
+</style>
+<table id="specialcharsDialogTable" border="0" align="center" cellpadding="0" cellspacing="6" width="494">
+  <tr>
+    <td class="specialchars" rowspan="3">
+
+    </td>
+    <td align="center" valign="top" width="80" nowrap="nowrap" class="gliphpreview">
+      &nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" nowrap="nowrap">
+      <input type="text" class="textpreview">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" nowrap="nowrap">
+      <input type="button" style="width:80px;height:23px;margin-top:4px;" value="@{Cancel}" class="dmx-editor-CANCEL" />
+    </td>
+  </tr>
+</table>
+<script>
+// INIT DIALOG (on every load)!
+(function() {
+  var chars = [
+	"&lsquo;", "&rsquo;", "&ldquo;", "&rdquo;", "&quot;", "&bdquo;", "&sbquo;",
+	"&uml;", "&#732;", "&dagger;", "&Dagger;", "&lsaquo;", "&rsaquo;", "&lt;",
+  "=", "&gt;", "&laquo;", "&raquo;", "&#710;", "&uarr;", "&frasl;", "&rarr;",
+	"&brvbar;", "&ndash;", "&mdash;", "&iexcl;", "&times;", "&trade;", "&copy;",
+	"&reg;", "&darr;", "&divide;", "&frac14;", "&frac12;", "&frac34;", "&sect;",
+	"&curren;", "&yen;", "&cent;", "&pound;", "&euro;", "&#402;", "&spades;",
+	"&clubs;", "&hearts;", "&amp;", "&ordf;", "&not;", "&macr;", "&deg;",
+	"&plusmn;", "&#338;", "&ordm;", "&sup1;", "&sup2;", "&sup3;", "&acute;",
+	"&micro;", "&para;", "&middot;", "&cedil;", "&iquest;", "&Agrave;", "&ccedil;",
+  "&Aacute;", "&Acirc;", "&Atilde;", "&Auml;", "&Aring;", "&AElig;", "&Ccedil;",
+	"&Egrave;", "&Eacute;", "&Ecirc;", "&Euml;", "&Igrave;", "&Iacute;", "&Icirc;",
+	"&Iuml;", "&ETH;", "&Ntilde;", "&Ograve;", "&Oacute;", "&Ocirc;", "&Otilde;",
+	"&Ouml;", "&aelig;", "&Oslash;", "&Ugrave;", "&Uacute;", "&Ucirc;", "&Uuml;",
+	"&Yacute;", "&THORN;", "&szlig;", "&agrave;", "&aacute;", "&acirc;", "&atilde;",
+	"&auml;", "&aring;", "&aelig;", "&ccedil;", "&egrave;", "&eacute;", "&ecirc;",
+	"&euml;", "&igrave;", "&iacute;", "&icirc;", "&iuml;", "&eth;", "&ntilde;",
+	"&ograve;", "&oacute;", "&ocirc;", "&otilde;", "&ouml;", "&oslash;",
+	"&ugrave;", "&uacute;", "&ucirc;", "&uuml;", "&uuml;", "&yuml;", "&yacute;",
+	"&thorn;", "&yuml;", "&#8482;", "&#8240;", "&#8218;", "&nbsp;"
+	];
+
+	// build dialog UI
+	var html = "";
+	$.each(chars, function(i, o) {
+		html += '<span class="specialchar" title="' + o.replace(/^&/g, "\&amp;") + '">' + o + '</span>';
+	});
+
+	$("#specialcharsDialogTable .specialchars").html(html + '<div class="clear"></div>');
+
+	$.dmxEditor.Dialog.init = function() {
+		var self = this, editor = this.editor,
+			gliphPreview = this.dialog.find(".gliphpreview"),
+			textPreview = this.dialog.find(".textpreview");
+
+		this.dialog.find(".specialchar").mouseenter(function(e) {
+			gliphPreview.html($(this).html());
+			textPreview.val(this.title);
+		}).click(function(e) {
+			editor.insertHtml(textPreview.val(), true);
+			self.close(true);
+		});
+	}
+})();
+</script>

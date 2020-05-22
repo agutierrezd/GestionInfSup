@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsinforme_intersup" value="name:inf_fecharep_i;datatype:int,name:inf_fecharep_f;datatype:int,name:inf_id;datatype:int" />
+	<infoitem key="UD_rscontrolinf" value="name:numinformes;datatype:int,name:id_cont_fk;datatype:int,name:OLDFECHAI;datatype:date,name:OLDFECHAF;datatype:date,name:inf_periodicidad;datatype:int,name:periodo_meses;datatype:int,name:NEWFECHAI;datatype:date,name:NEWFECHAF;datatype:date" />
+</info>

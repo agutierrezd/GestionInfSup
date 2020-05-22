@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rules title="Slovenian" language="sl">
+<rule name="requiredcond" ><![CDATA[Obvezno polje!]]></rule>
+<rule name="remotecond" ><![CDATA[Nepravilna vrednost polja.]]></rule>
+<rule name="emailcond" ><![CDATA[Vpi&#353;ite veljaven e-po&#353;tni naslov.]]></rule>
+<rule name="urlcond" ><![CDATA[Vpi&#353;ite veljaven URL naslov.]]></rule>
+<rule name="datecond" ><![CDATA[Vpi&#353;ite veljaven datum v obliki mesec/dan/leto!]]></rule>
+<rule name="dateDEcond" ><![CDATA[Vpi&#353;ite veljaven datum v obliki dan.mesec.leto!]]></rule>
+<rule name="dateisocond" ><![CDATA[Vpi&#353;ite veljaven datum (ISO).]]></rule>
+<rule name="numbercond" ><![CDATA[Vpi&#353;ite &#353;tevilko.]]></rule>
+<rule name="numbercompcond" ><![CDATA[Vpi&#353;ite &#353;tevilko.]]></rule>
+<rule name="digitscond" ><![CDATA[Vnesite le &#353;tevilke.]]></rule>
+<rule name="equalTocond" ><![CDATA[Ponovno vpi&#353;ite enako vrednost.]]></rule>
+<rule name="notEqualTocond"><![CDATA[Prosim, ne vnesete isto vrednost znova {0}.]]></rule>
+<rule name="acceptcond" ><![CDATA[Vnesite vrednost z dovoljeno končnico.]]></rule>
+<rule name="maxlengthcond" ><![CDATA[Vpi&#353;ite najve&#0269; {0} znakov.]]></rule>
+<rule name="minlengthcond" ><![CDATA[Vpi&#353;ite najmanj {0} znakov.]]></rule>
+<rule name="rangelengthcond" ><![CDATA[&#352;tevilo znakov sme biti med {0} in {1}.]]></rule>
+<rule name="rangecond" ><![CDATA[Vnesite vrednost med {0} in {1}.]]></rule>
+<rule name="maxcond" ><![CDATA[Vnesite vrednost manj&#353;o ali enako od {0}.]]></rule>
+<rule name="mincond" ><![CDATA[Vnesite vrednost ve&#0269;jo ali enako od {0}.]]></rule>
+<rule name="creditcardcond" ><![CDATA[Vnesite veljavno &#353;tevilko kreditne kartice.]]></rule>
+<rule name="mastercardcond" ><![CDATA[Vnesite veljavo &#353;tevilko Master Card.]]></rule>
+<rule name="visacardcond" ><![CDATA[Vnesite veljavno &#353;tevilko VISA kartice.]]></rule>
+<rule name="americanexpcond" ><![CDATA[Vnesite veljavno &#353;tevilko American Express kartice.]]></rule>
+<rule name="dinerscardcond" ><![CDATA[Vnesite veljavno &#353;tevilko Diners Club kartice.]]></rule>
+<rule name="discovercardcond" ><![CDATA[Vnesite veljavno &#353;tevilko Discover kartice.]]></rule>
+<rule name="jcbcardcond" ><![CDATA[Vnesite veljavno &#353;tevilko JCB kartice.]]></rule>
+<rule name="ajaxexistscond" ><![CDATA[V polje je vpisana nedovoljena vrednost.]]></rule>
+<rule name="ibancond" ><![CDATA[Vnesite veljavno IBAN &#353;tevilko.]]></rule>
+<rule name="vatcond" ><![CDATA[Vpi&#353;ite veljavno ID &#353;tevilko za DDV.]]></rule>
+<rule name="minrequiredcond" ><![CDATA[Ozna&#0269;ite najmanj {0} polj.]]></rule>
+<rule name="maxrequiredcond" ><![CDATA[Ozna&#0269;ite najve&#0269; {0} polj.]]></rule>
+<rule name="allcardscond" ><![CDATA[Vnesite veljavno &#353;tevilko kreditne kartice.]]></rule>
+<rule name="sessioncond" ><![CDATA[Vrednost se ne ujema z vrednostjo v seji.]]></rule>
+<rule name="letterscond" ><![CDATA[Uporabljajte le &#0269;rke.]]></rule>
+<rule name="alphanumericcond" ><![CDATA[Uporabljajte le &#0269;rke in &#353;tevilke.]]></rule>
+<rule name="alphanumericlatcond" ><![CDATA[Vnesite same črke in številke (alfanumerične znake).]]></rule>
+<rule name="charactersetcond" ><![CDATA[Ta vpis vsebuje znake, ki niso dovoljeni.]]></rule>
+<rule name="allowedcond" ><![CDATA[Dovoljeni so le znaki {0}.]]></rule>
+<rule name="disallowedcond" ><![CDATA[Znaki {0} niso dovoljeni.]]></rule>
+<rule name="forbiddencond" ><![CDATA[Polje vklju&#0269;uje besede, ki jih protismetni filter ne dovoli.]]></rule>
+</rules>

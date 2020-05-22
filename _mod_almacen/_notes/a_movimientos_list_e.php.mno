@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rslistasientos" value="name:as_id;datatype:int,name:ascodalmacen;datatype:int,name:as_nroasiento;datatype:int,name:as_fechaasiento;datatype:date,name:as_estadoasien;datatype:string,name:as_aplicadepre;datatype:string,name:PERIODO;datatype:int" />
+	<infoitem key="UD_rsperiodos" value="name:periodo_id;datatype:int,name:periodo_name;datatype:year" />
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+</info>

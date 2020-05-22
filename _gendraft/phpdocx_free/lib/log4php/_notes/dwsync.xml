@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Logger.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416790000000" />
+<file name="LoggerAppender.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416790000000" />
+<file name="LoggerAppenderPool.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416790000000" />
+<file name="LoggerConfigurator.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416790000000" />
+<file name="LoggerException.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416790000000" />
+<file name="LoggerFilter.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416790000000" />
+<file name="LoggerHierarchy.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416800000000" />
+<file name="LoggerLayout.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416800000000" />
+<file name="LoggerLevel.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416800000000" />
+<file name="LoggerLocationInfo.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416800000000" />
+<file name="LoggerLoggingEvent.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416800000000" />
+<file name="LoggerMDC.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416800000000" />
+<file name="LoggerNDC.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416800000000" />
+<file name="LoggerReflectionUtils.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416810000000" />
+<file name="LoggerRoot.php" server="172.18.0.27//trabajosrv/aplicaciones/www/Produccion_Nacional_2012/Administrador/" local="129344864400000000" remote="130173416810000000" />
+<file name="Logger.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844910000000" />
+<file name="LoggerAppender.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844910000000" />
+<file name="LoggerAppenderPool.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844910000000" />
+<file name="LoggerConfigurator.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844910000000" />
+<file name="LoggerException.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844910000000" />
+<file name="LoggerFilter.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844910000000" />
+<file name="LoggerHierarchy.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+<file name="LoggerLayout.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+<file name="LoggerLevel.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+<file name="LoggerLocationInfo.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+<file name="LoggerLoggingEvent.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+<file name="LoggerMDC.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+<file name="LoggerNDC.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+<file name="LoggerReflectionUtils.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+<file name="LoggerRoot.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="129344864400000000" remote="130281844920000000" />
+</dwsync>

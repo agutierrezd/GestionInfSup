@@ -1,0 +1,9 @@
+.dmxGoogleMaps img {
+	max-width: none !important;
+}
+
+.gmap_marker {
+	line-height: 1.35;
+	overflow: hidden;
+	white-space: nowrap;
+}

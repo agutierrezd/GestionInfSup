@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rsdestalle" value="name:almovconsdia_id;datatype:int,name:doclasedoc_id_fk;datatype:int,name:mcdalmacen;datatype:string,name:mcdcuenta;datatype:string,name:ca_nomcuenta;datatype:string,name:mcdcodelem;datatype:int,name:ec_nomelemento;datatype:string,name:mcd_cantmovto;datatype:int,name:mcd_cantasignada;datatype:int,name:mcd_saldant;datatype:int,name:mcd_valunitant;datatype:real,name:mcd_valmovto;datatype:real,name:ecunidad;datatype:int,name:um_nomunimed;datatype:string,name:mcd_tax;datatype:real,name:buscar;datatype:string" />
+</info>

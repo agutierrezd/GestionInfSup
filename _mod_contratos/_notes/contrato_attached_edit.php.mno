@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rscontrato_attached" value="name:id_cont_fk;datatype:int,name:att_type;datatype:int,name:att_file;datatype:int,name:sys_user;datatype:int,name:sys_date;datatype:int,name:sys_time;datatype:int,name:sys_stat;datatype:int,name:id_att;datatype:int" />
+	<infoitem key="UD_rscodatt" value="name:id_att;datatype:int,name:id_cont_fk;datatype:int,name:att_type;datatype:int,name:att_type_cod;datatype:string,name:att_type_name;datatype:string,name:att_file;datatype:string,name:sys_user;datatype:string,name:sys_date;datatype:date,name:sys_time;datatype:time,name:sys_stat;datatype:int,name:att_type_ctrl;datatype:int" />
+	<infoitem key="UD_rscodct" value="name:id_cont;datatype:int,name:pre_contnumero;datatype:string,name:contnumero;datatype:string,name:cont_ano;datatype:year" />
+</info>

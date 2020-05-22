@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rscontrato_os" value="name:id_cont_fk;datatype:int,name:os_type_type;datatype:int,name:os_fecha;datatype:int,name:os_valor;datatype:int,name:sys_user;datatype:int,name:os_id;datatype:int" />
+	<infoitem key="UD_rsinfotype" value="name:otrosi_id;datatype:int,name:otrosi_name;datatype:string,name:otrosi_lnk;datatype:string" />
+</info>

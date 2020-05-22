@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsbuscaelementosd" value="name:alelemenconsumo_id;datatype:int,name:eccuenta;datatype:string,name:ec_codelem;datatype:int,name:ec_nomelemento;datatype:string,name:ecunidad;datatype:int,name:um_nomunimed;datatype:string,name:ec_localizacion;datatype:string,name:buscador;datatype:string" />
+</info>

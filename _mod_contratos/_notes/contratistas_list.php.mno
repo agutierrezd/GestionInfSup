@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rscontratistalist" value="name:contractor_id;datatype:int,name:contractor_type;datatype:string,name:contractor_doc_id;datatype:string,name:contractor_doc_id_dv;datatype:int,name:contractor_name;datatype:string,name:contractor_lname;datatype:string,name:contractor_nombresfull;datatype:string,name:qfinder;datatype:string" />
+</info>

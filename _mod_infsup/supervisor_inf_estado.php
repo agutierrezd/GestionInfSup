@@ -1,0 +1,133 @@
+<?php require_once('../Connections/oConnContratos.php'); ?>
+<?php
+// Require the MXI classes
+require_once ('../includes/mxi/MXI.php');
+
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? "'" . doubleval($theValue) . "'" : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+mysql_select_db($database_oConnContratos, $oConnContratos);
+$query_RsInfestado = "SELECT * FROM q_global_informes_entregados ORDER BY NCONTRATO ASC";
+$RsInfestado = mysql_query($query_RsInfestado, $oConnContratos) or die(mysql_error());
+$row_RsInfestado = mysql_fetch_assoc($RsInfestado);
+$totalRows_RsInfestado = mysql_num_rows($RsInfestado);
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>.:: Contrataci&oacute;n :: MinCIT ::.</title>
+<link href="../_css/jqueryslidemenu.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../_jquery/hs/highslide/highslide-with-html.js"></script>
+<link rel="stylesheet" type="text/css" href="../_jquery/hs/highslide/highslide.css" />
+<script type="text/javascript">
+hs.graphicsDir = '../_jquery/hs/highslide/graphics/';
+hs.outlineType = 'rounded-white';
+hs.wrapperClassName = 'draggable-header';
+function MM_popupMsg(msg) { //v1.0
+  alert(msg);
+}
+</script>
+</head>
+
+<body>
+<?php
+  mxi_includes_start("../inc_top.php");
+  require(basename("../inc_top.php"));
+  mxi_includes_end();
+?>
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="2" cellpadding="0">
+      <tr>
+        <td class="frmtablahead">&nbsp;</td>
+        <td class="frmtablahead">CONTRATO</td>
+        <td class="frmtablahead">SUPERVISOR</td>
+        <td class="frmtablahead">CONTRATISTA</td>
+        <td class="frmtablahead">INFORMES SUGERIDOS</td>
+        <td class="frmtablahead">INFORMES ENTREGADOS</td>
+        <td class="frmtablahead">MES INICIO DE CONTRATO</td>
+        <td class="frmtablahead">PERIODICIDAD</td>
+        <td class="frmtablahead">OTROSI</td>
+        <td class="frmtablahead">FECHA INICIO</td>
+        <td class="frmtablahead">FECHA FINAL</td>
+      </tr>
+      <?php do { ?>
+        <tr>
+          <td class="frmtablabodyW" align="center"><a href="send_not_003.php?doc_id=<?php echo $row_RsInfestado['id_cont_fk']; ?>" onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
+            <?php 
+// Show IF Conditional region2 
+if (@$row_RsInfestado['INF_ENTREGADOS'] == "") {
+?>
+              <img src="icons/324_notmail.png" width="32" height="32" border="0" /><br />
+            <?php } 
+// endif Conditional region2
+?></a><?php echo $row_RsInfestado['QTYMAILSEND']; ?></td>
+          <td class="frmtablabody"><?php echo $row_RsInfestado['NCONTRATO']; ?></td>
+          <td class="frmtablabody"><a href="supervisor_inf_sup.php?SUPUSER=<?php echo $row_RsInfestado['SUPUSER']; ?>"><?php echo $row_RsInfestado['SUPNAME']." ".$row_RsInfestado['SUPLASTNAME']; ?></a></td>
+          <td class="frmtablabody"><?php echo $row_RsInfestado['contractor_name']; ?></td>
+          <td class="frmtablabody"><?php echo $row_RsInfestado['INF_SUGERIDOS']; ?></td>
+          <td class="frmtablabody"><?php echo $row_RsInfestado['INF_ENTREGADOS']; ?></td>
+          <td class="frmtablabody"><?php echo $row_RsInfestado['MESINICIO']; ?></td>
+          <td class="frmtablabody"><?php echo $row_RsInfestado['periodo_name']; ?></td>
+          <td class="frmtablabodyW" align="center">
+            <?php 
+// Show IF Conditional region1 
+if (@$row_RsInfestado['cont_otrosi'] == 1) {
+?>
+              <img src="icons/Shape-Circle.png" width="32" height="32" />
+            <?php } 
+// endif Conditional region1
+?></td>
+          <td class="frmtablabody"><?php echo $row_RsInfestado['cont_fecha_inicio']; ?></td>
+          <td class="frmtablabody"><?php echo $row_RsInfestado['cont_fechafinal']; ?></td>
+        </tr>
+        <?php } while ($row_RsInfestado = mysql_fetch_assoc($RsInfestado)); ?>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<?php
+  mxi_includes_start("../inc_foot.php");
+  require(basename("../inc_foot.php"));
+  mxi_includes_end();
+?>
+</body>
+</html>
+<?php
+mysql_free_result($RsInfestado);
+?>

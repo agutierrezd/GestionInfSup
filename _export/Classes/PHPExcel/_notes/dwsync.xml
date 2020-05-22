@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Autoloader.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511430000000" />
+<file name="CachedObjectStorageFactory.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511430000000" />
+<file name="Calculation.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="Cell.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="Chart.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="Comment.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="DocumentProperties.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="DocumentSecurity.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="Exception.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="HashTable.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="IComparable.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="IOFactory.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511440000000" />
+<file name="NamedRange.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793400000000" remote="130217511450000000" />
+<file name="ReferenceHelper.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793420000000" remote="130217511450000000" />
+<file name="RichText.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793420000000" remote="130217511450000000" />
+<file name="Settings.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793420000000" remote="130217511450000000" />
+<file name="Style.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793420000000" remote="130217511460000000" />
+<file name="Worksheet.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793420000000" remote="130217511470000000" />
+<file name="WorksheetIterator.php" server="172.18.0.47//trabajosrv/aplicaciones/www/consultas_pn/" local="130146793420000000" remote="130217511470000000" />
+<file name="IOFactory.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386730000000" />
+<file name="RichText.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793420000000" remote="130252386740000000" />
+<file name="Autoloader.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386760000000" />
+<file name="CachedObjectStorageFactory.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386760000000" />
+<file name="Calculation.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386780000000" />
+<file name="Cell.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386790000000" />
+<file name="Chart.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386800000000" />
+<file name="Comment.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386800000000" />
+<file name="DocumentProperties.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386800000000" />
+<file name="DocumentSecurity.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386800000000" />
+<file name="Exception.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386810000000" />
+<file name="HashTable.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386810000000" />
+<file name="IComparable.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386820000000" />
+<file name="NamedRange.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793400000000" remote="130252386920000000" />
+<file name="ReferenceHelper.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793420000000" remote="130252386940000000" />
+<file name="Settings.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793420000000" remote="130252386950000000" />
+<file name="Style.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793420000000" remote="130252387040000000" />
+<file name="Worksheet.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793420000000" remote="130252387050000000" />
+<file name="WorksheetIterator.php" server="172.18.0.125//AplicacionesMcit/www/html/contratos/" local="130146793420000000" remote="130252387060000000" />
+</dwsync>

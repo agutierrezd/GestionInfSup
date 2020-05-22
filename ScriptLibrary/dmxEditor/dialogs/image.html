@@ -1,0 +1,394 @@
+<!--
+ Advanced HTML Editor 3
+ Version: 3.5.6
+ (c) 2012 DMXzone.com
+ @build 04-04-2012 17:46:56
+-->
+<style type="text/css">
+/*
+#imageDialogTable input,
+#imageDialogTable select {
+  height: 20px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+*/
+#imageDialogTable .dmx-tab-pannels-container {
+  min-width:250px;
+}
+
+#imageDialogTable .preview {
+  min-height: 22px;
+  max-height: 200px;
+  max-width: 450px;
+  border:1px solid #666;
+  overflow:auto;
+  text-align:center;
+  line-height:22px;
+  color:#999;
+}
+
+#fileUploadProgressbar {
+  position: relative;
+  background: #FFFFFF;
+  height: 5px;
+  width:100%
+}
+
+#fileUploadProgressbarInner {
+  position: absolute;
+  left: 0px;
+  background: palegreen;
+  border: 1px solid limegreen;
+  height: 3px;
+  width:0%;
+  text-align:left;
+}
+
+
+#imageDialogTable .file_upload {
+  position: relative;
+  overflow: hidden;
+  direction: ltr;
+  cursor: pointer;
+  text-align: center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-left:2px;
+  margin-bottom:0px;
+  width: 80px;
+  height: 18px;
+  background: #EDEDED;
+  border: 1px solid #707070;
+}
+
+#imageDialogTable .file_upload input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: 300px solid transparent;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  filter: alpha(opacity=0);
+  -o-transform: translate(-300px, -300px) scale(10);
+  -moz-transform: translate(-800px, 0) scale(10);
+  cursor: pointer;
+}
+
+#imageDialogTable .file_upload iframe, .file_upload button {
+  display: none;
+}
+
+</style>
+<div id="imageDialogTable">
+
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+
+		<!-- Tabs row -->
+    <tr>
+      <td>
+        <div class="dmx-tab-container">
+          <span class="dmx-tab active" pannel="General">@{General}</span>
+          <div class="clear"></div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Content row -->
+    <tr>
+      <td class="dmx-tab-pannels-container">
+        <div class="dmx-tab-pannel General active">
+          <table border="0" align="center" cellpadding="2" cellspacing="2">
+            <tr>
+              <td align="right" nowrap="nowrap">@{Image URL}:</td>
+              <td nowrap="nowrap">
+              	<table border="0" cellpadding="0" cellspacing="0">
+              		<tr><td>
+										<input type="text" name="src" style="width:100%;min-width:350px;" />
+									</td><td>
+										<form style="display:none;" id="file_upload" class="file_upload" action="upload.php" method="POST" enctype="multipart/form-data">
+									    <input type="file" name="file">
+									    <button>@{Upload}</button>
+									    <div>@{Upload}</div>
+										</form>
+									</td></tr>
+								</table>
+						  </td>
+            </tr>
+            <tr>
+              <td align="right" nowrap="nowrap">@{Alternate Text}:</td>
+              <td><input type="text" name="alt" style="width:100%;min-width:350px;" /></td>
+            </tr>
+
+            <tr>
+              <td align="right" nowrap="nowrap">@{Preview}:</td>
+              <td align="center" valign="center">
+              	<div id="fileUploadProgressbar" style="display:none;"><div id="fileUploadProgressbarInner"></div></div>
+              	<div class="preview dmx-alpha-bg">@{No file choosen}</div>
+              </td>
+            </tr>
+						<tr>
+              <td colspan="2">
+              	<table border="0" align="center" cellpadding="2" cellspacing="2">
+              	  <tr>
+              	  	<td>
+              	  		<fieldset>
+              	  			<legend>@{Layout}</legend>
+												<table border="0" align="center" cellpadding="1" cellspacing="1">
+													<tr>
+														<td align="right" nowrap="nowrap">@{Alignment}:</td>
+														<td>
+															<select name="align">
+																<option value="" selected="selected"> Not set </option>
+															  <option value="left"> Left </option>
+															  <option value="right"> Right </option>
+															  <option value="textTop"> Texttop </option>
+															  <option value="absMiddle"> Absmiddle </option>
+															  <option value="baseline"> Baseline </option>
+															  <option value="absBottom"> Absbottom </option>
+															  <option value="bottom"> Bottom </option>
+															  <option value="middle"> Middle </option>
+															  <option value="top"> Top </option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+                            <td align="right" nowrap="nowrap">@{Border Thickness}:</td>
+                            <td><input type="text" size="4" name="border" /></td>
+                          </tr>
+												</table>
+              	  		</fieldset>
+              	  	</td>
+										<td>
+											<fieldset>
+                        <legend>@{Spacing}</legend>
+												<table border="0" align="center" cellpadding="1" cellspacing="1">
+                          <tr>
+                            <td align="right" nowrap="nowrap">@{Horizontal}:</td>
+                            <td><input type="text" size="4" name="hspace" /></td>
+                          </tr>
+                          <tr>
+                            <td align="right" nowrap="nowrap">@{Vertical}:</td>
+                            <td><input type="text" size="4" name="vspace" /></td>
+                          </tr>
+                        </table>
+                      </fieldset>
+										</td>
+										<td>
+											<fieldset>
+                        <legend>@{Size}</legend>
+												<table border="0" align="center" cellpadding="1" cellspacing="1">
+                          <tr>
+                            <td align="right" nowrap="nowrap">@{Width}:</td>
+                            <td><input type="text" size="4" name="width" /></td>
+                          </tr>
+                          <tr>
+                            <td align="right" nowrap="nowrap">@{Height}:</td>
+                            <td><input type="text" size="4" name="height" /></td>
+                          </tr>
+                        </table>
+                      </fieldset>
+										</td>
+              	  </tr>
+								</table>
+              </td>
+						</tr>
+          </table>
+          <div class="messages" style="background-color:#FD8;padding:4px 6px;margin-top:6px;border:1px solid #F00; display:none;"></div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Buttons -->
+    <tr>
+      <td align="right" nowrap="nowrap" style="padding-top:6px;">
+        <input type="button" style="width:80px;height:23px;" value="@{OK}"     class="dmx-editor-OK" />
+        <input type="button" style="width:80px;height:23px;" value="@{Cancel}" class="dmx-editor-CANCEL" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script type="text/javascript">
+(function($) {
+
+$.dmxEditor.Dialog.init = function() {
+	var _this = this, o = this.editor.options, _errors = [];
+
+	if (o.allowUpload) {
+		$("#file_upload").show();
+
+		var uploadPath = toFullPath(o.uploadPath);
+	  var cleanSubFolder = (o.subFolder ? o.subFolder.replace(/(^\/|\/$)/g,'') : '');
+	  var uploadRelative = absoluteToRelativeURL(uploadPath,$.dmxEditor.basePath + 'dmxEditor/dialogs/');
+
+		var submitUrl = $.dmxEditor.basePath + "dmxEditor/dialogs/upload"
+			+ (o.allowResize ? "_resize" : "") + "." + o.uploadProcessor + "?GP_upload=true"
+			+ "&upfolder=" + uploadRelative
+			+ "&subfolder=" + o.subFolder
+			+ (o.allowResize ? "&mw=" + o.resizeMaxWidth + "&mh=" + o.resizeMaxHeight : "");
+
+		$("#file_upload").attr("action", submitUrl).ajaxUpload({
+			namespace : "file_upload_image",
+			cssClass  : "dmxUploadDDZone",
+			dropZone  : $("#imageDialogTable"),
+			url       : submitUrl,
+			initUpload: function(event, files, index, xhr, handler, callback) {
+				// no multiupload
+				if (index == 0) {
+					//clearErrors();
+					$("#fileUploadProgressbar").show();
+					//previewImage($.dmxEditor.basePath + "dmxEditor/dialogs/loading.gif");
+					callback();
+				}
+			},
+			onProgress: function(event, files, index, xhr, handler) {
+				var p = parseInt(event.loaded / event.total * 100, 10);
+				$("#fileUploadProgressbarInner").css("width", p + '%');
+			},
+			onLoad    : function(event, files, index, xhr, handler) {
+				var result = xhr.responseText ? xhr.responseText : xhr.contents().text();
+				var uiBegin = result.indexOf('Upload Succesful@@@');
+				if (uiBegin != -1) {
+					// success
+					//var fileName = /@@@filename=(.*?)@@@/.exec(result)[1];
+					//_this.dialog.find("[name=src]").val(o.uploadPath + (o.subFolder ? "/" + o.subFolder : "") + "/" + fileName);
+
+					var uiEnd = result.indexOf('@@@End Upload info');
+					if (uiEnd == -1) uiEnd = result.length-1;
+					var uploadInfo = result.substring(uiBegin, uiEnd);
+          var mArr = uploadInfo.split("@@@");
+		    	if (mArr.length > 2) {
+            var fileName = mArr[1].substr(mArr[1].indexOf("=") + 1);
+		    		fileName = getFileName(fileName);
+		    		var filePath = o.uploadPath
+		    				+ (o.subFolder ? '/' + cleanSubFolder : '')
+		    				+ '/' + fileName;
+			    	if (files && files.length > 0) {
+			    		_this.dialog.find('[name="src"]'  ).val(filePath);
+			    		if (mArr[2] && mArr[2] != '') {
+				    		var fileHeight = mArr[2].substr(mArr[2].indexOf("=") + 1);
+					    	_this.dialog.find('input[name="height"]' ).val(fileHeight);
+						  }
+			    		if (mArr[3] && mArr[3] != '') {
+				    		var fileWidth = mArr[3].substr(mArr[3].indexOf("=") + 1);
+					    	_this.dialog.find('input[name="width"]' ).val(fileWidth);
+						  }
+			    	}
+			    }
+
+				} else {
+					// error
+					//Check for errors
+		    	var errMatch = '<h1>Upload Error</h1>';
+		    	var errIndex = result.indexOf(errMatch);
+		      if (errIndex != -1) {
+		      	result = result.replace('Please correct and <a href="javascript:history.back(1)">try again</a>','');
+		      	_errors.push(result.substring(errIndex+errMatch.length,result.length));
+		      	showErrors();
+		      } else {
+						//Unknown Error
+		      	_errors.push(result);
+		      	showErrors();
+		      }
+
+					//warn(result.replace(/<\/h1>|<br\s*\/?>/gi, "\n").replace(/<.*?>/gi, ""));
+				}
+
+				$("#fileUploadProgressbar").hide();
+
+				previewImage();
+			}
+		});
+	}
+
+	this.dialog.find("[name=src]").change(previewImage);
+
+	previewImage();
+
+	/**
+   * Display errors
+   */
+  function showErrors() {
+    _this.dialog.find(".messages").html(
+      "The following error(s) occured:<br/><br/>&bull; "
+      + _errors.join("<br/>&bull; ")
+    ).show();
+  }
+
+  /**
+   * Clears all errors and hides the error msages from the UI
+   */
+  function clearErrors() {
+    _errors = [];
+    _this.dialog.find(".messages").empty("").hide();
+  }
+
+	function previewImage() {
+		var src = _this.dialog.find("[name=src]").val();
+
+		if (src == "") {
+			_this.dialog.find(".preview").text("@{No file choosen}");
+		} else {
+			_this.dialog.find(".preview").html('<img src="' + src + '" alt="" />');
+		}
+
+		_this.reposition();
+	}
+
+	function toFullPath(path) {
+    path = String(path);
+    var tmp = jQuery('<a href="' + path + '" />');
+    var ret = String(tmp[0].href);
+    tmp = null;
+    return String(ret);
+  }
+
+	function absoluteToRelativeURL(absURL, docURL) {
+	  var newRef, fullURL, index, filePath, docPath;
+
+    newRef = '';
+    fullURL = absURL;
+    if (docURL && fullURL.indexOf(docURL) === 0) {
+      newRef = fullURL.substring(docURL.length); // doc relative, below doc
+    }
+    else {
+    	if (docURL) { // doc relative, above doc
+	      for (index = 0; index < fullURL.length && index < docURL.length; index++) {
+	        if (fullURL.charAt(index).toLowerCase() != docURL.charAt(index).toLowerCase()) {
+	        	break;
+	        }
+	      }
+	      index = fullURL.substring(0, index).lastIndexOf('/') + 1; // backup to last directory
+	      filePath = fullURL.substring(index);
+	      docPath = docURL.substring(index);
+	      if (docPath && docPath.indexOf('|') == -1) { // image on a separate drive
+	        for (var j = 0; j < docPath.length; j++) {
+	        	if (docPath.charAt(j) == '/') {
+	        		newRef += "../";
+	        	}
+	        }
+	        newRef += filePath;
+	      }
+	    }
+    }
+    if (!newRef) {
+    	newRef = fullURL; // local file ref
+    }
+
+	  return newRef;
+	}
+
+	function getFileName(theURL) {
+    var theFilePath = theURL;
+    if (theFilePath.lastIndexOf('/') != -1)
+    	theFilePath = theFilePath.substring(theFilePath.lastIndexOf('/')+1,theFilePath.length);
+    return theFilePath;
+	}
+};
+
+})(jQuery);
+</script>

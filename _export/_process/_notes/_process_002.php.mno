@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsprocess" value="name:productor_nit;datatype:string,name:NombreComercial;datatype:string,name:NombreTecnico;datatype:string,name:idarancel;datatype:string,name:estado;datatype:string,name:FechaVencimiento;datatype:date,name:productor_raz;datatype:string,name:productor_tel;datatype:string,name:productor_ciu;datatype:string,name:radicado;datatype:string,name:idEstado;datatype:int,name:productor_dir;datatype:string" />
+</info>

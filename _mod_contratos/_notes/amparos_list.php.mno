@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rslistamparos" value="name:poliza_id;datatype:int,name:id_cont_fk;datatype:int,name:id_att_fk;datatype:int,name:poli_numero;datatype:string,name:poli_compania;datatype:int,name:nom_aseguradora;datatype:string,name:poli_fechaexpedicion;datatype:date,name:poli_codamparo;datatype:int,name:poliza_type_name;datatype:string,name:poli_fechaaprobacion;datatype:date,name:poli_porcentaje;datatype:real,name:poli_valor;datatype:real,name:poli_vigenciadesde;datatype:date,name:poli_vigenciahasta;datatype:date,name:sys_user;datatype:string,name:sys_date;datatype:date,name:sys_time;datatype:time" />
+</info>

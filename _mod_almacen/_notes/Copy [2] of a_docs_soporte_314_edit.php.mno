@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rstax" value="name:tax_id;datatype:string,name:tax_code;datatype:int,name:tax_name;datatype:string" />
+	<infoitem key="UD_rsalmovdevdia" value="name:doclasedoc_id_fk;datatype:int,name:mddclasedoc;datatype:int,name:mddnrodoc;datatype:int,name:mddfechadoc;datatype:int,name:mddalmacen;datatype:int,name:mddtipoestruc;datatype:int,name:mddcuenta;datatype:int,name:mddcodelem;datatype:int,name:mdd_cantmovto;datatype:int,name:mdd_valunit;datatype:int,name:mdd_tax;datatype:int,name:mdd_valmovto;datatype:int,name:geusuario;datatype:int,name:gefechaactua;datatype:int,name:almovdevdia_id;datatype:int" />
+	<infoitem key="UD_rscuentasd" value="name:cuentasalma_id;datatype:int,name:catipoestruc;datatype:string,name:ca_codcuenta;datatype:int,name:ca_nomcuenta;datatype:string,name:ca_recibemovto;datatype:string,name:ca_tipocuenta;datatype:string,name:geusuario;datatype:string,name:gefechaactua;datatype:datetime" />
+	<infoitem key="UD_rsqalmovdevdia" value="name:almovdevdia_id;datatype:int,name:doclasedoc_id_fk;datatype:int,name:mddcuenta;datatype:string,name:mddcodelem;datatype:int,name:ed_nomelemento;datatype:string,name:edunidad;datatype:string,name:edmarca;datatype:int,name:ma_nommarca;datatype:string,name:mdd_cantmovto;datatype:int,name:mdd_valunit;datatype:real,name:mdd_tax;datatype:int,name:mdd_valmovto;datatype:real" />
+	<infoitem key="UD_rsgedocumentos" value="name:doclasedoc_id;datatype:int,name:alasiento_id_fk;datatype:int,name:doclasedoc;datatype:int,name:do_nrodoc;datatype:int,name:do_fechadoc;datatype:datetime,name:docodregion;datatype:int,name:do_detalle;datatype:string,name:doccnit;datatype:string,name:do_tipodoc;datatype:string,name:do_file;datatype:string,name:sys_user;datatype:string,name:sys_fecha;datatype:datetime" />
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+</info>

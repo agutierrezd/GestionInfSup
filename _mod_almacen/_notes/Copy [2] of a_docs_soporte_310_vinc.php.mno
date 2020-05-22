@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rsresultado" value="name:mcdcuenta;datatype:string,name:ca_nomcuenta;datatype:string,name:mcdcodelem;datatype:int,name:mcdalmacen;datatype:string,name:ec_nomelemento;datatype:string,name:qty;datatype:int,name:saldoactual;datatype:real,name:buscar;datatype:string" />
+</info>

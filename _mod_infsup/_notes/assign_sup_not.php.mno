@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsinterventor_interno" value="name:sys_user;datatype:int,name:sup_status;datatype:int,name:sup_fechanot;datatype:int,name:sup_horanot;datatype:int,name:sup_mailnot;datatype:int,name:interventor_id;datatype:int" />
+	<infoitem key="UD_rsinfosup" value="name:interventor_id;datatype:int,name:id_cont_fk;datatype:int,name:cont_hash_fk;datatype:string,name:idusrglobal_fk;datatype:int,name:sys_date;datatype:date,name:sys_time;datatype:time,name:sys_user;datatype:string,name:usr_name;datatype:string,name:usr_lname;datatype:string,name:usr_email;datatype:string,name:usr_dependencia;datatype:string,name:usr_personalid;datatype:string,name:Username;datatype:string,name:sup_status;datatype:int,name:sup_fechanot;datatype:date,name:sup_horanot;datatype:time,name:pre_contnumero;datatype:string,name:contnumero;datatype:string,name:cont_ano;datatype:year,name:cont_fecha_inicio;datatype:date,name:cont_fechafinal;datatype:date" />
+</info>

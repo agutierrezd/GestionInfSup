@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rscea" value="name:almovdevdia_id;datatype:int,name:doclasedoc_id_fk;datatype:int,name:ca_codcuenta;datatype:int,name:ca_nomcuenta;datatype:string,name:mddcodelem;datatype:int,name:midnroplaca;datatype:string,name:midnroserie;datatype:string,name:edunidad;datatype:string,name:um_nomunimed;datatype:string,name:mid_valunit;datatype:real,name:mid_tax;datatype:int,name:mid_valormovto;datatype:real,name:ed_nomelemento;datatype:string,name:edmarca;datatype:int,name:ma_nommarca;datatype:string" />
+</info>

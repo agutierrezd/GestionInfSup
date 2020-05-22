@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rsalmacen" value="name:ascodalmacen;datatype:int,name:ascodalmacen_estado;datatype:int,name:ascodalmacen_nombre;datatype:string,name:ascodalmacen_locale;datatype:string" />
+	<infoitem key="UD_rsalasientos" value="name:ascodalmacen;datatype:int,name:as_nroasiento;datatype:int,name:as_fechaasiento;datatype:int,name:as_estadoasien;datatype:int,name:as_aplicadepre;datatype:int,name:sys_user;datatype:int,name:sys_date;datatype:int,name:as_id;datatype:int" />
+	<infoitem key="UD_rsultimonumero" value="name:ascodalmacen;datatype:int,name:Q;datatype:int,name:FECHA;datatype:date" />
+</info>

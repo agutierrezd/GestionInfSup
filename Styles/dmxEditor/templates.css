@@ -1,0 +1,32 @@
+﻿.wrap {
+  margin : 8px 0;
+  padding: 1px;
+  border : 1px solid #CCC;
+  color: #036;
+}
+
+.wrap .header {
+  margin: 0;
+  background: #DDD;
+  border-bottom: 3px double #036;
+}
+
+.wrap .header h3 {
+  margin:0;
+  padding:2px 1em;
+  text-shadow: 1px 1px 0 #FFF;
+}
+
+.wrap .main {
+  margin: 0;
+  background: #FFF;
+  padding:4px 1em;
+}
+
+.wrap .footer {
+  margin: 0;
+  background: #EEE;
+  text-align:center;
+  padding:4px 1em;
+  border-top: 1px solid #CCC;
+}

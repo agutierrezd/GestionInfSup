@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_Recordset1" value="name:status_name;datatype:string,name:id_status;datatype:int" />
+	<infoitem key="UD_Recordset2" value="name:rol_name;datatype:string,name:id_site_fk;datatype:int" />
+	<infoitem key="UD_rsglobal_users1" value="name:Username;datatype:string,name:usr_name;datatype:string,name:usr_lname;datatype:string,name:usr_status;datatype:string,name:global_rol_contratos;datatype:string,name:usr_email;datatype:string,name:idusrglobal;datatype:int" />
+</info>

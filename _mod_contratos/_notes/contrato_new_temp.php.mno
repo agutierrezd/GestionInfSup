@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="MM_css_include" value="../_css/ddsmoothmenu.css,../_css/ddsmoothmenu-v.css,../includes/skins/mxkollection3.css" />
+	<infoitem key="UD_rstipo" value="name:codigo;datatype:string,name:nombre;datatype:string" />
+	<infoitem key="UD_rsprenum" value="name:codigo;datatype:string,name:nombre;datatype:string,name:rol;datatype:string" />
+	<infoitem key="UD_rsuej" value="name:cod_tipounidad;datatype:string,name:nom_tipounidad;datatype:string,name:periodo;datatype:year" />
+	<infoitem key="UD_rsfase" value="name:cont_fase;datatype:string,name:fase_nombre;datatype:string" />
+	<infoitem key="UD_rsmodalidad" value="name:cod_mod_proceso;datatype:string,name:des_mod_proceso;datatype:string" />
+	<infoitem key="UD_rstipocontrato" value="name:cont_tipo;datatype:string,name:nom_tipocontrato;datatype:string,name:ctrl_pago;datatype:int" />
+	<infoitem key="UD_rsformapago" value="name:codigo;datatype:string,name:nombre;datatype:string" />
+	<infoitem key="UD_rscontrato" value="name:cont_nit_contra_ta;datatype:int,name:cont_hash;datatype:int,name:cont_estado;datatype:int,name:cont_codrubro;datatype:int,name:prenumero;datatype:int,name:cont_tipo;datatype:int,name:numregistro;datatype:int,name:pre_contnumero;datatype:int,name:contnumero;datatype:int,name:cont_ano;datatype:int,name:cont_tipopre;datatype:int,name:cont_fase;datatype:int,name:cont_fechaapertura;datatype:int,name:cont_valorinicial;datatype:int,name:cont_modalidad;datatype:int,name:cont_tipoproceso;datatype:int,name:cont_formapago;datatype:int,name:cont_fechasistema;datatype:int,name:id_cont;datatype:int" />
+	<infoitem key="UD_rsrubros" value="name:RUBRO;datatype:string,name:DESCRIPCION;datatype:string" />
+</info>

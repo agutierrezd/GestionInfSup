@@ -1,0 +1,48 @@
+.dmxXP
+{
+}
+
+.dmxXP h2
+{
+	padding: 7px 0 9px 8px;
+	color: #fff;
+	background-image: url(titlexp.png);
+	background-position: left 0px;
+	background-repeat: repeat-x;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.dmxXP .closeHandle
+{
+	top: 4px;
+	right: 3px;
+	width: 21px;
+	height: 21px;
+	background-image: url(cancelxp.png);
+}
+
+.dmxOSX
+{
+}
+
+.dmxOSX h2
+{
+	padding: 7px 0 9px 16px;
+	color: #fff;
+	background-image: url(titleosx.png);
+	background-position: left 0px;
+	background-repeat: repeat-x;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-align: center;
+}
+
+.dmxOSX .closeHandle
+{
+	top: 5px;
+	left: 3px;
+	width: 18px;
+	height: 18px;
+	background-image: url(cancelosx.png);
+}

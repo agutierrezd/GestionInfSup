@@ -1,0 +1,243 @@
+<!--
+ Advanced HTML Editor 3
+ Version: 3.5.6
+ (c) 2012 DMXzone.com
+ @build 04-04-2012 17:46:56
+-->
+<style type="text/css">
+/*
+#inserLinkDialogTable input,
+#inserLinkDialogTable select {
+	height: 20px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.dmx-link-editor {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+#inserLinkDialogTable .dmx-tab-pannels-container { min-width:250px; }*/
+.dmx-lb { display: none; }
+.dmx-link-description { display: none; }
+.dmx-link-editor {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.dmx-link-button {
+	float: right;
+}
+.dmx-link-icon {
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.dmx-link-fileManager {
+	background-image: url('${url}../extensions/FileManager/default.png');
+}
+</style>
+
+<div>
+<!--
+	<ul class="dmx-editor-tabs">
+		<li><a href="#" class="dmx-tab active" pannel="General">@{General}</a></li>
+		<li><a href="#" class="dmx-tab" pannel="GA">@{Google Analytics}</a></li>
+		<li><a href="#" class="dmx-tab" pannel="LB">@{Lightbox}</a></li>
+	</ul>
+
+	<div id="dmx-editor-link-general" class="dmx-editor-tabs-content dmx-editor-tabs-active">
+		General tab
+	</div>
+
+	<div id="dmx-editor-link-ga" class="dmx-editor-tabs-content">
+		Google analytics
+	</div>
+
+	<div id="dmx-editor-link-lb" class="dmx-editor-tabs-content">
+		Lightbox
+	</div>
+-->
+
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <div class="dmx-tab-container">
+          <span class="dmx-tab active" pannel="General">@{General}</span>
+          <span class="dmx-tab" pannel="GA">@{Google Analytics}</span>
+          <span class="dmx-tab dmx-lb" pannel="LB">@{Lightbox}</span>
+          <div class="clear"></div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Content row -->
+    <tr>
+      <td class="dmx-tab-pannels-container">
+        <div class="dmx-tab-pannel LB">
+          <table border="0" align="center" cellpadding="2" cellspacing="2">
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="3"><input type="checkbox" name="lb_use" />&nbsp;@{Open in Lightbox}</td>
+            </tr>
+						<tr>
+						  <td align="right">@{Width}:</td>
+						  <td><input type="text" name="lb_width" style="width:60px;" /></td>
+						  <td width="100%" align="right">&nbsp;@{Height}:</td>
+						  <td><input type="text" name="lb_height" style="width:60px;" /></td>
+						</tr>
+						<tr>
+						  <td align="right">@{Group}:</td>
+						  <td colspan="3"><input type="text" name="lb_group" style="width:100%;min-width:180px;" /></td>
+						</tr>
+				  </table>
+				</div>
+        <div class="dmx-tab-pannel GA">
+          <table border="0" align="center" cellpadding="1" cellspacing="1">
+            <tr>
+              <td align="right" nowrap>Source *:</td>
+              <td><input type="text" name="utm_source" style="width:100%;min-width:200px;" /></td>
+            </tr>
+            <tr>
+              <td align="right" nowrap>Medium *:</td>
+              <td><input type="text" name="utm_medium" style="width:100%;min-width:200px;" /></td>
+            </tr>
+            <tr>
+              <td align="right" nowrap>Content:</td>
+              <td><input type="text" name="utm_content" style="width:100%;min-width:200px;" /></td>
+            </tr>
+            <tr>
+              <td align="right" nowrap>Name *:</td>
+              <td><input type="text" name="utm_campaign" style="width:100%;min-width:200px;" /></td>
+            </tr>
+          </table>
+        </div>
+        <div class="dmx-tab-pannel General active">
+          <table border="0" align="center" cellpadding="1" cellspacing="1">
+            <tr>
+              <td align="right">@{Type}:</td>
+              <td>
+                <select name="scheme">
+                  <option id="optOther" value="" style="color:#999"> (other) </option>
+                  <option id="optFile" value="file://"> file: </option>
+                  <option id="optFtp" value="ftp://"> ftp: </option>
+                  <option id="optGopher" value="gopher:"> gopher: </option>
+                  <option id="optHttp" value="http://" selected="selected"> http: </option>
+                  <option id="optHttps" value="https://"> https: </option>
+                  <option id="optMailto" value="mailto:"> mailto: </option>
+                  <option id="optNews" value="news:"> news: </option>
+                  <option id="optTelnet" value="telnet:"> telnet: </option>
+                  <option id="optWais" value="wais:"> wais: </option>
+                </select>
+              </td>
+              <td width="100%" align="right">&nbsp;@{Target}:</td>
+              <td>
+                <select name="target">
+                  <option id="optDef" value="" selected="selected" style="color:#999"> (default) </option>
+                  <option id="optBlank" value="_blank"> _blank </option>
+                  <option id="optParent" value="_parent"> _parent </option>
+                  <option id="optSelf" value="_self"> _self </option>
+                  <option id="optTop" value="_top"> _top </option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">@{URL}:</td>
+              <td colspan="3" width="300"><input type="text" name="url" value="http://" style="width:100%;min-width:200px;" />
+               <div title="@{Select using file manager}" id="dmx-link-browse" class="dmx-link-button button hoverable" style="display:none;">
+                   <div class="dmx-link-icon dmx-link-fileManager"></div>
+               </div>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">@{Title}:</td>
+              <td colspan="3"><input type="text" name="title" style="width:100%;min-width:200px;" /></td>
+            </tr>
+            <tr class="dmx-link-description">
+              <td align="right">@{Description}:</td>
+              <td colspan="3"><textarea class="dmx-link-editor" name="description" style="width:100%;min-width:200px;" /></td>
+            </tr>
+          </table>
+        </div>
+        <div class="messages" style="background-color:#FD8;padding:4px 6px;margin-top:6px;border:1px solid #F00; display:none;"></div>
+      </td>
+    </tr>
+
+    <!-- Buttons -->
+    <tr>
+      <td align="right" nowrap="nowrap" style="padding-top:6px;">
+        <input type="button" style="width:80px;height:23px;" value="@{OK}"     class="dmx-editor-OK" />
+        <input type="button" style="width:80px;height:23px;" value="@{Cancel}" class="dmx-editor-CANCEL" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<script type="text/javascript">
+(function($) {
+
+$.dmxEditor.Dialog.init = function() {
+	var _dialog = this.dialog,
+     editor = this.editor;
+
+    if (this.options.showDescription) {
+     _dialog.find(".dmx-link-description").show();
+
+     if (this.options.htmlDescription) {
+      _dialog.find('.dmx-link-editor').dmxEditor({
+       width: 300,
+       height: 100,
+       toolbars:{History:{enabled:false}, Text:{items:{strikethrough:false, subscript:false, superscript:false, justifyleft:false, justifycenter:false, justifyfull:false, justifyright:false, indent:false, outdent:false, forecolor:false, bgcolor:false}}, Format:{enabled:false}, Lists:{enabled:false}, Table:{enabled:false}, Search:{enabled:false}, Insert:{items:{inserthorizontalrule:false, addaoreditimage:false, insertspecialchar:false}}, Font:{enabled:false}, Style:{enabled:false}, Common:{enabled:false}}
+      });
+
+      _dialog.find(".dmx-editor-OK").click(function(){
+       _dialog.find(".dmx-link-editor").data("dmxEditor").save();
+      });
+     }
+    }
+
+    if ("FileManager" in editor.extensions) {
+     _dialog.find("[name=url]").width(273);
+		$("#dmx-link-browse").show().click(function(e) {
+			var dialog = new $.dmxEditor.Dialog("fileManager", editor, {
+				modal: true,
+				darken: true,
+				retFocus: false,
+				position: "center",
+				FileManager: {
+					onSelect: function(files) {
+                        _dialog.find("[name=url]").val(files[0]);
+						this.close(false);
+					}
+				}
+			});
+			dialog.open("extensions/FileManager/FileManager.html");
+		});
+	}
+
+	if (editor.options.allowLightbox) {
+	  _dialog.find(".dmx-lb").show();
+	}
+
+	_dialog.find("[name=scheme]").change(function(e) {
+		var url = _dialog.find("[name=url]").val(), scheme = $(this).val();
+
+		// remove old scheme
+		url = url.replace(/^\w+:(\/\/)?/, '');
+		// put new scheme in from of url
+		url = scheme + url;
+		// update the url textfield
+		_dialog.find("[name=url]").val(url);
+	});
+
+	$.tabs(
+		"#" + this.id + " .dmx-tab-container",
+		"#" + this.id + " .dmx-tab-pannels-container"
+	);
+
+	// TODO: validation of the values?
+};
+
+})(jQuery);
+</script>
